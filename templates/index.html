@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CMCs - KCDB</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 2em; background-color: #f4f4f4; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #333; }
+        form { display: grid; grid-template-columns: 150px 1fr; gap: 10px; margin-bottom: 20px; }
+        label { font-weight: bold; text-align: right; padding-top: 5px; }
+        input, select, button { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+        button { grid-column: 2; background-color: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .status { padding: 10px; border-radius: 4px; margin-top: 15px; }
+        .status.success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .status.error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .hidden { display: none; }
+        #lookup-result { font-size: 1.2em; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de CMCs a la API del BIPM</h1>
+
+        <!-- SECCIÓN 1: CONSULTA A LA API -->
+        <div id="api-section">
+            <h2>1. Parámetros de Consulta</h2>
+            <form id="query-form">
+                <label for="metrologyArea">Área Metrología:</label>
+                <input type="text" id="metrologyArea" value="EM">
+                
+                <label for="physicsCode">Código Física:</label>
+                <input type="text" id="physicsCode" value="5.2.1">
+
+                <label for="countries">Países (ISO):</label>
+                <input type="text" id="countries" value="AR">
+                
+                <button type="submit">Consultar API y Buscar Tablas</button>
+            </form>
+            <div id="api-status" class="status hidden"></div>
+        </div>
+
+        <!-- SECCIÓN 2: SELECCIÓN DE TABLA Y BÚSQUEDA -->
+        <div id="lookup-section" class="hidden">
+            <hr>
+            <h2>2. Búsqueda de Incertidumbre</h2>
+            <p>Tablas encontradas en el archivo: <b id="filename-display"></b></p>
+            
+            <form id="lookup-form">
+                <label for="table-selector">Seleccionar Tabla:</label>
+                <select id="table-selector" required></select>
+
+                <label for="voltage">Voltaje (e.g. "0.5 V"):</label>
+                <input type="text" id="voltage" required>
+
+                <label for="frequency">Frecuencia (e.g. "10 kHz"):</label>
+                <input type="text" id="frequency" required>
+
+                <button type="submit">Buscar Incertidumbre</button>
+            </form>
+            <div id="lookup-result" class="status hidden"></div>
+        </div>
+    </div>
+
+    <script>
+        // Guardar referencia a los elementos del DOM
+        const queryForm = document.getElementById('query-form');
+        const apiStatus = document.getElementById('api-status');
+        const lookupSection = document.getElementById('lookup-section');
+        const filenameDisplay = document.getElementById('filename-display');
+        const tableSelector = document.getElementById('table-selector');
+        const lookupForm = document.getElementById('lookup-form');
+        const lookupResult = document.getElementById('lookup-result');
+
+        let savedFilename = ''; // Variable para guardar el nombre del archivo
+
+        // --- MANEJADOR PARA EL FORMULARIO DE CONSULTA A LA API ---
+        queryForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            showStatus(apiStatus, 'Consultando API...', 'process');
+
+            const payload = {
+                page: 0,
+                pageSize: 20,
+                showTable: true,
+                metrologyAreaLabel: document.getElementById('metrologyArea').value,
+                physicsCode: document.getElementById('physicsCode').value,
+                countries: document.getElementById('countries').value.split(',').map(c => c.trim()),
+            };
+
+            try {
+                const response = await fetch('/api/query_bipm', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (!response.ok || !result.success) {
+                    throw new Error(result.message || 'Error en la respuesta del servidor.');
+                }
+
+                showStatus(apiStatus, result.message, 'success');
+                savedFilename = result.filename;
+                filenameDisplay.textContent = savedFilename;
+
+                // Llenar el selector de tablas
+                tableSelector.innerHTML = '<option value="" disabled selected>-- Seleccione una tabla --</option>';
+                if (result.tables.length > 0) {
+                    result.tables.forEach(table => {
+                        const option = document.createElement('option');
+                        option.value = table.id;
+                        option.textContent = `${table.kcdbCode} - ${table.quantityValue}`;
+                        tableSelector.appendChild(option);
+                    });
+                    lookupSection.classList.remove('hidden');
+                } else {
+                    showStatus(apiStatus, `${result.message}. No se encontraron tablas de incertidumbre válidas.`, 'error');
+                    lookupSection.classList.add('hidden');
+                }
+
+            } catch (error) {
+                showStatus(apiStatus, `Error: ${error.message}`, 'error');
+            }
+        });
+
+        // --- MANEJADOR PARA EL FORMULARIO DE BÚSQUEDA DE INCERTIDUMBRE ---
+        lookupForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            showStatus(lookupResult, 'Buscando...', 'process');
+
+            const payload = {
+                filename: savedFilename,
+                table_id: tableSelector.value,
+                voltage: document.getElementById('voltage').value,
+                frequency: document.getElementById('frequency').value,
+            };
+
+            try {
+                const response = await fetch('/api/lookup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (!response.ok || !result.success) {
+                    throw new Error(result.message || 'Error en la búsqueda.');
+                }
+                
+                const uncertainty = result.result;
+                if (uncertainty !== null) {
+                    showStatus(lookupResult, `Resultado encontrado: ${uncertainty}`, 'success');
+                } else {
+                    showStatus(lookupResult, 'No se encontró un valor para los parámetros dados.', 'error');
+                }
+
+            } catch (error) {
+                showStatus(lookupResult, `Error: ${error.message}`, 'error');
+            }
+        });
+
+        // Función de utilidad para mostrar mensajes de estado
+        function showStatus(element, message, type) {
+            element.textContent = message;
+            element.className = 'status'; // Reset class
+            if (type === 'success') {
+                element.classList.add('success');
+            } else if (type === 'error') {
+                element.classList.add('error');
+            }
+            element.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
