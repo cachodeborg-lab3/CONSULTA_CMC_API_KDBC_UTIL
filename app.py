@@ -19,6 +19,11 @@ def index():
     """Sirve la página HTML principal."""
     return render_template('index.html')
 
+@app.route('/advanced_search')
+def advanced_search():
+    """Sirve la página de búsqueda avanzada."""
+    return render_template('advanced_search.html')
+
 @app.route('/api/query_bipm', methods=['POST'])
 def query_bipm_api():
     """
@@ -109,6 +114,54 @@ def lookup_uncertainty():
         return jsonify({"success": False, "message": f"Archivo no encontrado: {filename}"}), 404
     except Exception as e:
         return jsonify({"success": False, "message": f"Error durante la búsqueda: {e}"}), 500
+
+@app.route('/api/advanced_search', methods=['POST'])
+def advanced_search_api():
+    """
+    Endpoint para búsqueda avanzada con múltiples parámetros.
+    """
+    payload = request.get_json()
+    bipm_url = "https://www.bipm.org/api/kcdb/cmc/searchData/physics"
+    headers = {"Content-Type": "application/json"}
+
+    try:
+        # 1. Realizar la consulta a la API del BIPM con parámetros avanzados
+        response = requests.post(bipm_url, headers=headers, json=payload)
+        response.raise_for_status()
+        data = response.json()
+
+        # 2. Guardar la respuesta en un archivo con timestamp
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"responses/advanced_search_{timestamp}.json"
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+
+        # 3. Buscar tablas de incertidumbre en la respuesta
+        tables_found = []
+        if 'data' in data and isinstance(data['data'], list):
+            for record in data['data']:
+                if (isinstance(record, dict) and 
+                    'uncertaintyTable' in record and 
+                    record['uncertaintyTable'].get('tableContents') and
+                    record['uncertaintyTable']['tableContents'] != '<masked>'):
+                    
+                    tables_found.append({
+                        "id": record.get('id'),
+                        "kcdbCode": record.get('kcdbCode', 'N/A'),
+                        "quantityValue": record.get('quantityValue', 'N/A')
+                    })
+        
+        return jsonify({
+            "success": True,
+            "message": f"Búsqueda avanzada completada. Respuesta guardada en '{filename}'",
+            "filename": filename,
+            "tables": tables_found
+        })
+
+    except requests.exceptions.RequestException as e:
+        return jsonify({"success": False, "message": f"Error de red o API: {e}"}), 500
+    except Exception as e:
+        return jsonify({"success": False, "message": f"Error inesperado: {e}"}), 500
 
 if __name__ == '__main__':
     # Inicia el servidor en modo de depuración para facilitar el desarrollo

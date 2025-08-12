@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda Avanzada - CMCs KCDB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Main Container */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            margin: 20px 0;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .breadcrumbs a {
+            color: #6b7280;
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            color: #374151;
+        }
+
+        /* Page Title */
+        .page-title {
+            color: #1e3a8a;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Advanced Search Form */
+        .advanced-search-form {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .form-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            color: #1e3a8a;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e3a8a;
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-group .help-text {
+            font-size: 12px;
+            color: #6b7280;
+            margin-top: 5px;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+
+        .btn-reset {
+            background-color: #6b7280;
+            color: white;
+        }
+
+        .btn-reset:hover {
+            background-color: #4b5563;
+        }
+
+        .btn-search {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .btn-search:hover {
+            background-color: #1e40af;
+        }
+
+        .btn-back {
+            background-color: #059669;
+            color: white;
+        }
+
+        .btn-back:hover {
+            background-color: #047857;
+        }
+
+        /* Results Section */
+        .results-section {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .results-section h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        /* Status messages */
+        .status {
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        .status.success {
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        .status.error {
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .status.process {
+            background-color: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #93c5fd;
+        }
+
+        /* Hidden sections */
+        .hidden {
+            display: none;
+        }
+
+        /* Lookup section */
+        .lookup-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .lookup-section h4 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .submit-btn {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .submit-btn:hover {
+            background-color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="/">Home</a> > <a href="/">CMC search</a> > Búsqueda Avanzada
+        </div>
+
+        <!-- Page Title -->
+        <h1 class="page-title">Búsqueda Avanzada de CMCs</h1>
+
+        <!-- Advanced Search Form -->
+        <div class="advanced-search-form">
+            <form id="advanced-search-form">
+                <!-- Basic Information Section -->
+                <div class="form-section">
+                    <h3 class="section-title">Información Básica</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="domainCode">Código de Dominio</label>
+                            <select id="domainCode" name="domainCode">
+                                <option value="">Seleccionar dominio</option>
+                                <option value="PHYSICS">PHYSICS</option>
+                                <option value="CHEMISTRY">CHEMISTRY</option>
+                                <option value="BIOLOGY">BIOLOGY</option>
+                                <option value="IONIZING_RADIATION">IONIZING RADIATION</option>
+                            </select>
+                            <div class="help-text">Dominio principal de la metrología</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="metrologyAreaLabel">Área Metrología</label>
+                            <input type="text" id="metrologyAreaLabel" name="metrologyAreaLabel" value="EM" placeholder="EM">
+                            <div class="help-text">Código del área metrológica (ej: EM, L, T)</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rmo">RMO</label>
+                            <select id="rmo" name="rmo">
+                                <option value="">Seleccionar RMO</option>
+                                <option value="SIM">SIM</option>
+                                <option value="EUROMET">EUROMET</option>
+                                <option value="APMP">APMP</option>
+                                <option value="COOMET">COOMET</option>
+                                <option value="AFRIMETS">AFRIMETS</option>
+                            </select>
+                            <div class="help-text">Organización Regional de Metrología</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="countryValue">País</label>
+                            <input type="text" id="countryValue" name="countryValue" value="Argentina" placeholder="Argentina">
+                            <div class="help-text">Nombre del país</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NMI Information Section -->
+                <div class="form-section">
+                    <h3 class="section-title">Información del NMI</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nmiCode">Código NMI</label>
+                            <input type="text" id="nmiCode" name="nmiCode" value="INTI" placeholder="INTI">
+                            <div class="help-text">Código del Instituto Nacional de Metrología</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nmiName">Nombre NMI</label>
+                            <input type="text" id="nmiName" name="nmiName" value="Instituto Nacional de Tecnologia Industrial" placeholder="Instituto Nacional de Tecnologia Industrial">
+                            <div class="help-text">Nombre completo del instituto</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Information Section -->
+                <div class="form-section">
+                    <h3 class="section-title">Información del Servicio</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="branchValue">Rama del Servicio</label>
+                            <input type="text" id="branchValue" name="branchValue" value="AC voltage, current, and power" placeholder="AC voltage, current, and power">
+                            <div class="help-text">Descripción de la rama del servicio</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="branchLabel">Etiqueta de Rama</label>
+                            <input type="text" id="branchLabel" name="branchLabel" value="EM/AC" placeholder="EM/AC">
+                            <div class="help-text">Código de la rama (ej: EM/AC)</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceValue">Servicio</label>
+                            <input type="text" id="serviceValue" name="serviceValue" value="AC voltage (up to the MHz range)" placeholder="AC voltage (up to the MHz range)">
+                            <div class="help-text">Descripción específica del servicio</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subServiceValue">Sub-Servicio</label>
+                            <input type="text" id="subServiceValue" name="subServiceValue" value="AC voltage up to 1100 V" placeholder="AC voltage up to 1100 V">
+                            <div class="help-text">Descripción del sub-servicio</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="individualServiceValue">Servicio Individual</label>
+                            <input type="text" id="individualServiceValue" name="individualServiceValue" value="Sources" placeholder="Sources">
+                            <div class="help-text">Servicio específico individual</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Information Section -->
+                <div class="form-section">
+                    <h3 class="section-title">Información Técnica</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="physicsCode">Código Física</label>
+                            <input type="text" id="physicsCode" name="physicsCode" value="5.2.1" placeholder="5.2.1">
+                            <div class="help-text">Código de la física específica</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="kcdbServiceCategory">Categoría KCDB</label>
+                            <input type="text" id="kcdbServiceCategory" name="kcdbServiceCategory" value="EM/AC/5.2.1" placeholder="EM/AC/5.2.1">
+                            <div class="help-text">Categoría completa del servicio KCDB</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="instrument">Instrumento</label>
+                            <input type="text" id="instrument" name="instrument" value="AC voltage source, multifunction calibrator" placeholder="AC voltage source, multifunction calibrator">
+                            <div class="help-text">Descripción del instrumento utilizado</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="instrumentMethod">Método del Instrumento</label>
+                            <input type="text" id="instrumentMethod" name="instrumentMethod" value="AC/DC transfer" placeholder="AC/DC transfer">
+                            <div class="help-text">Método de calibración del instrumento</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Parameters Section -->
+                <div class="form-section">
+                    <h3 class="section-title">Parámetros Adicionales</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="page">Página</label>
+                            <input type="number" id="page" name="page" value="0" min="0">
+                            <div class="help-text">Número de página para paginación</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pageSize">Tamaño de Página</label>
+                            <input type="number" id="pageSize" name="pageSize" value="20" min="1" max="100">
+                            <div class="help-text">Número de resultados por página</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="showTable">Mostrar Tabla</label>
+                            <select id="showTable" name="showTable">
+                                <option value="true">Sí</option>
+                                <option value="false">No</option>
+                            </select>
+                            <div class="help-text">Incluir tablas de incertidumbre en la respuesta</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button type="button" class="btn btn-back" onclick="window.location.href='/'">VOLVER</button>
+                    <button type="button" class="btn btn-reset" onclick="resetForm()">RESET</button>
+                    <button type="submit" class="btn btn-search">BUSCAR</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-section" class="results-section hidden">
+            <h3>Resultados de la Búsqueda Avanzada</h3>
+            <div id="search-status" class="status hidden"></div>
+            
+            <div id="lookup-section" class="lookup-section hidden">
+                <h4>Búsqueda de Incertidumbre</h4>
+                <p>Tablas encontradas en el archivo: <b id="filename-display"></b></p>
+                
+                <form id="lookup-form">
+                    <div class="form-group">
+                        <label for="table-selector">Seleccionar Tabla:</label>
+                        <select id="table-selector" required></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="voltage">Voltaje (e.g. "0.5 V"):</label>
+                        <input type="text" id="voltage" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="frequency">Frecuencia (e.g. "10 kHz"):</label>
+                        <input type="text" id="frequency" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Buscar Incertidumbre</button>
+                </form>
+                <div id="lookup-result" class="status hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form submission handler
+        document.getElementById('advanced-search-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Show results section
+            document.getElementById('results-section').classList.remove('hidden');
+            showStatus(document.getElementById('search-status'), 'Realizando búsqueda avanzada...', 'process');
+
+            // Collect form data
+            const formData = new FormData(e.target);
+            const payload = {};
+            
+            // Convert FormData to JSON object
+            for (let [key, value] of formData.entries()) {
+                if (value !== '') {
+                    // Handle special cases
+                    if (key === 'showTable') {
+                        payload[key] = value === 'true';
+                    } else if (key === 'page' || key === 'pageSize') {
+                        payload[key] = parseInt(value);
+                    } else if (key === 'countries') {
+                        payload[key] = value.split(',').map(c => c.trim());
+                    } else {
+                        payload[key] = value;
+                    }
+                }
+            }
+
+            // Add default values if not present
+            if (!payload.page) payload.page = 0;
+            if (!payload.pageSize) payload.pageSize = 20;
+            if (!payload.showTable) payload.showTable = true;
+
+            try {
+                const response = await fetch('/api/advanced_search', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (!response.ok || !result.success) {
+                    throw new Error(result.message || 'Error en la respuesta del servidor.');
+                }
+
+                showStatus(document.getElementById('search-status'), result.message, 'success');
+                
+                // Store filename for lookup
+                window.savedFilename = result.filename;
+                document.getElementById('filename-display').textContent = result.filename;
+
+                // Fill table selector
+                const tableSelector = document.getElementById('table-selector');
+                tableSelector.innerHTML = '<option value="" disabled selected>-- Seleccione una tabla --</option>';
+                
+                if (result.tables.length > 0) {
+                    result.tables.forEach(table => {
+                        const option = document.createElement('option');
+                        option.value = table.id;
+                        option.textContent = `${table.kcdbCode} - ${table.quantityValue}`;
+                        tableSelector.appendChild(option);
+                    });
+                    document.getElementById('lookup-section').classList.remove('hidden');
+                } else {
+                    showStatus(document.getElementById('search-status'), `${result.message}. No se encontraron tablas de incertidumbre válidas.`, 'error');
+                    document.getElementById('lookup-section').classList.add('hidden');
+                }
+
+            } catch (error) {
+                showStatus(document.getElementById('search-status'), `Error: ${error.message}`, 'error');
+            }
+        });
+
+        // Lookup form functionality
+        document.getElementById('lookup-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            showStatus(document.getElementById('lookup-result'), 'Buscando...', 'process');
+
+            const payload = {
+                filename: window.savedFilename,
+                table_id: document.getElementById('table-selector').value,
+                voltage: document.getElementById('voltage').value,
+                frequency: document.getElementById('frequency').value,
+            };
+
+            try {
+                const response = await fetch('/api/lookup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (!response.ok || !result.success) {
+                    throw new Error(result.message || 'Error en la búsqueda.');
+                }
+                
+                const uncertainty = result.result;
+                if (uncertainty !== null) {
+                    showStatus(document.getElementById('lookup-result'), `Resultado encontrado: ${uncertainty}`, 'success');
+                } else {
+                    showStatus(document.getElementById('lookup-result'), 'No se encontró un valor para los parámetros dados.', 'error');
+                }
+
+            } catch (error) {
+                showStatus(document.getElementById('lookup-result'), `Error: ${error.message}`, 'error');
+            }
+        });
+
+        // Reset form functionality
+        function resetForm() {
+            document.getElementById('advanced-search-form').reset();
+            
+            // Reset to default values
+            document.getElementById('metrologyAreaLabel').value = 'EM';
+            document.getElementById('countryValue').value = 'Argentina';
+            document.getElementById('nmiCode').value = 'INTI';
+            document.getElementById('nmiName').value = 'Instituto Nacional de Tecnologia Industrial';
+            document.getElementById('branchValue').value = 'AC voltage, current, and power';
+            document.getElementById('branchLabel').value = 'EM/AC';
+            document.getElementById('serviceValue').value = 'AC voltage (up to the MHz range)';
+            document.getElementById('subServiceValue').value = 'AC voltage up to 1100 V';
+            document.getElementById('individualServiceValue').value = 'Sources';
+            document.getElementById('physicsCode').value = '5.2.1';
+            document.getElementById('kcdbServiceCategory').value = 'EM/AC/5.2.1';
+            document.getElementById('instrument').value = 'AC voltage source, multifunction calibrator';
+            document.getElementById('instrumentMethod').value = 'AC/DC transfer';
+            document.getElementById('page').value = '0';
+            document.getElementById('pageSize').value = '20';
+            document.getElementById('showTable').value = 'true';
+            
+            // Hide results section
+            document.getElementById('results-section').classList.add('hidden');
+            document.getElementById('lookup-section').classList.add('hidden');
+        }
+
+        // Utility function for showing status messages
+        function showStatus(element, message, type) {
+            element.textContent = message;
+            element.className = 'status';
+            if (type === 'success') {
+                element.classList.add('success');
+            } else if (type === 'error') {
+                element.classList.add('error');
+            } else if (type === 'process') {
+                element.classList.add('process');
+            }
+            element.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

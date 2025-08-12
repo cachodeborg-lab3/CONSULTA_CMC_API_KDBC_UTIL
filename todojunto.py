@@ -127,7 +127,7 @@ if __name__ == "__main__":
     # --- Sección de Pruebas Exhaustivas ---
 
     # 1. Cargar el JSON de ejemplo
-    json_file_path = "CMC_EM_AR_ACVSOURCE.json"
+    json_file_path = "responses/CMC_EM_AR.json"
     try:
         with open(json_file_path, 'r', encoding='utf-8') as f:
             cmc_data = json.load(f)
