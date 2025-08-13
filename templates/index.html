@@ -40,128 +40,84 @@
             color: #374151;
         }
 
-        /* Advanced Search Section */
-        .advanced-search {
+        /* Page Title */
+        .page-title {
+            color: #1e3a8a;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Main Search Card */
+        .main-search-card {
             background: white;
             border: 1px solid #e5e7eb;
             border-radius: 8px;
             padding: 30px;
             margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
 
-        /* Category Selectors */
-        .category-row {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+        .card-header {
             margin-bottom: 30px;
+            text-align: center;
         }
 
-        .category-box {
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            padding: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-            position: relative;
-        }
-
-        .category-box:hover {
-            border-color: #1e3a8a;
-            box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1);
-        }
-
-        .category-title {
+        .card-header h2 {
             color: #1e3a8a;
-            font-weight: 700;
-            font-size: 16px;
-            margin-bottom: 8px;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
-        .category-subtitle {
+        .card-header p {
             color: #6b7280;
             font-size: 14px;
         }
 
-        .category-arrow {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #9ca3af;
+        /* Tree Loading Section */
+        .tree-loading-section {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 30px;
         }
 
-        /* Keywords Section */
-        .keywords-section {
+        .tree-loading-section h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .tree-controls {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            align-items: end;
+        }
+
+        /* Cascading Selects */
+        .cascading-selects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             margin-bottom: 30px;
-            align-items: start;
         }
 
-        .keywords-label {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: #374151;
-            font-weight: 600;
-        }
-
-        .help-icon {
-            width: 20px;
-            height: 20px;
-            background-color: #9ca3af;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 12px;
-            cursor: help;
-        }
-
-        .search-input {
+        .select-group {
             position: relative;
         }
 
-        .search-input input {
-            width: 100%;
-            padding: 12px 45px 12px 15px;
-            border: 1px solid #e5e7eb;
-            border-radius: 6px;
+        .select-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #374151;
             font-size: 14px;
         }
 
-        .search-input input::placeholder {
-            color: #9ca3af;
-        }
-
-        .search-btn {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            color: #1e3a8a;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        /* Dropdown Filters */
-        .dropdown-filters {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .dropdown-field {
-            position: relative;
-        }
-
-        .dropdown-field select {
+        .select-group select {
             width: 100%;
             padding: 12px 35px 12px 15px;
             border: 1px solid #e5e7eb;
@@ -170,14 +126,22 @@
             color: #374151;
             font-size: 14px;
             cursor: pointer;
+            transition: border-color 0.3s;
         }
 
-        .dropdown-field select:focus {
+        .select-group select:focus {
             outline: none;
             border-color: #1e3a8a;
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
         }
 
-        .dropdown-arrow {
+        .select-group select:disabled {
+            background-color: #f9fafb;
+            color: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .select-arrow {
             position: absolute;
             right: 15px;
             top: 50%;
@@ -186,31 +150,94 @@
             pointer-events: none;
         }
 
-        /* Other Filters Section */
-        .other-filters {
+        /* Data Source Section */
+        .data-source-section {
             background-color: #dbeafe;
             border: 1px solid #e5e7eb;
             border-radius: 6px;
-            padding: 15px 20px;
+            padding: 20px;
             margin-bottom: 30px;
+        }
+
+        .data-source-section h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .source-controls {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+            align-items: end;
+        }
+
+        .radio-group {
             display: flex;
-            justify-content: space-between;
+            gap: 20px;
             align-items: center;
         }
 
-        .other-filters-label {
-            color: #1e3a8a;
-            font-weight: 700;
-            font-size: 16px;
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-weight: 500;
         }
 
-        .expand-btn {
-            background: none;
-            border: none;
-            color: #1e3a8a;
-            font-size: 20px;
-            cursor: pointer;
-            padding: 5px;
+        .radio-group input[type="radio"] {
+            margin: 0;
+        }
+
+        .local-file-controls {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 15px;
+            align-items: end;
+        }
+
+        /* Status and Controls */
+        .status-controls {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-badge.loading {
+            background-color: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #93c5fd;
+        }
+
+        .status-badge.success {
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        .status-badge.error {
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .status-badge.default {
+            background-color: #f3f4f6;
+            color: #6b7280;
+            border: 1px solid #d1d5db;
         }
 
         /* Action Buttons */
@@ -218,6 +245,7 @@
             display: flex;
             gap: 20px;
             justify-content: center;
+            margin-bottom: 30px;
         }
 
         .btn {
@@ -231,36 +259,206 @@
             font-size: 14px;
         }
 
-        .btn-reset {
+        .btn-primary {
             background-color: #1e3a8a;
             color: white;
         }
 
-        .btn-reset:hover {
+        .btn-primary:hover {
             background-color: #1e40af;
         }
 
-        .btn-apply {
-            background-color: #1e3a8a;
+        .btn-secondary {
+            background-color: #6b7280;
             color: white;
         }
 
-        .btn-apply:hover {
-            background-color: #1e40af;
+        .btn-secondary:hover {
+            background-color: #4b5563;
         }
 
-        .btn-advanced {
+        .btn-success {
             background-color: #059669;
             color: white;
         }
 
-        .btn-advanced:hover {
+        .btn-success:hover {
             background-color: #047857;
         }
 
-        /* Hidden sections for functionality */
-        .hidden {
-            display: none;
+        /* Results Section */
+        .results-section {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .results-section h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .results-content {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 20px;
+            max-height: 400px;
+            overflow: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* JSON Styling */
+        .json-viewer {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            border-radius: 6px;
+            padding: 20px;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            overflow: auto;
+            max-height: 500px;
+        }
+
+        .json-key {
+            color: #9cdcfe;
+            font-weight: bold;
+        }
+
+        .json-string {
+            color: #ce9178;
+        }
+
+        .json-number {
+            color: #b5cea8;
+        }
+
+        .json-boolean {
+            color: #569cd6;
+        }
+
+        .json-null {
+            color: #569cd6;
+            font-style: italic;
+        }
+
+        .json-toggle {
+            cursor: pointer;
+            color: #9cdcfe;
+            margin-right: 5px;
+            user-select: none;
+        }
+
+        .json-toggle:hover {
+            color: #ffffff;
+        }
+
+        .json-collapsed {
+            color: #6a9955;
+            font-style: italic;
+        }
+
+        .json-indent {
+            margin-left: 20px;
+        }
+
+        .loading-json {
+            color: #1e40af;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .error-json {
+            color: #991b1b;
+            background-color: #fee2e2;
+            border: 1px solid #fecaca;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .results-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .results-controls .btn {
+            padding: 8px 16px;
+            font-size: 12px;
+            min-width: auto;
+        }
+
+        /* Lookup Section */
+        .lookup-section {
+            background-color: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .lookup-section h4 {
+            color: #0369a1;
+            margin-bottom: 15px;
+        }
+
+        .lookup-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            align-items: end;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #1e3a8a;
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+
+        .submit-btn {
+            background-color: #0369a1;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #075985;
         }
 
         /* Status messages */
@@ -289,58 +487,33 @@
             border: 1px solid #93c5fd;
         }
 
-        /* Results section */
-        .results-section {
-            margin-top: 30px;
-            padding: 20px;
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
+        /* Hidden sections */
+        .hidden {
+            display: none;
         }
 
-        .results-section h3 {
-            color: #1e3a8a;
-            margin-bottom: 15px;
-        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tree-controls,
+            .source-controls,
+            .status-controls {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
 
-        .form-group {
-            margin-bottom: 15px;
-        }
+            .cascading-selects {
+                grid-template-columns: 1fr;
+            }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-            color: #374151;
-        }
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
 
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #e5e7eb;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #1e3a8a;
-        }
-
-        .submit-btn {
-            background-color: #1e3a8a;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-        }
-
-        .submit-btn:hover {
-            background-color: #1e40af;
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
         }
     </style>
 </head>
@@ -348,128 +521,98 @@
     <div class="main-container">
         <!-- Breadcrumbs -->
         <div class="breadcrumbs">
-            <a href="#">Home</a> > CMC search
+            <a href="#">Home</a> > Búsqueda CMC
         </div>
 
-        <!-- Advanced Search Section -->
-        <div class="advanced-search">
-            <!-- Category Selectors -->
-            <div class="category-row">
-                <div class="category-box">
-                    <div class="category-title">GENERAL PHYSICS</div>
-                    <div class="category-subtitle">Electricity and Magnetism</div>
-                    <div class="category-arrow">▼</div>
-                </div>
-                <div class="category-box">
-                    <div class="category-title">CHEMISTRY AND BIOLOGY</div>
-                    <div class="category-subtitle">Analytical Chemistry</div>
-                    <div class="category-arrow">▼</div>
-                </div>
-                <div class="category-box">
-                    <div class="category-title">IONIZING RADIATION</div>
-                    <div class="category-subtitle">Dosimetry</div>
-                    <div class="category-arrow">▼</div>
+        <!-- Page Title -->
+        <h1 class="page-title">Buscador CMC — Búsqueda de Lineas de CMC (puntos y tablas)</h1>
+
+        <!-- Main Search Card -->
+        <div class="main-search-card">
+            <div class="card-header">
+                <h2>Consulta de CMCs al arbol de categorias y tablas locales</h2>
+                <p>Por defecto se cargan <code>cmc_category_tree.json</code> y <code>CMC_EM_MUNDIAL.json</code> desde la misma carpeta</p>
+            </div>
+
+            <!-- Tree Loading Section -->
+            <div class="tree-loading-section">
+                <h3>Carga de Estructura del Árbol</h3>
+                <div class="tree-controls">
+                    <div class="form-group">
+                        <label for="treeUrl">Ruta del archivo del árbol</label>
+                        <input type="text" id="treeUrl" value="cmc_category_tree.json" />
+                    </div>
+                    <div class="form-group">
+                        <label for="treeFile">Cargar desde archivo</label>
+                        <input type="file" id="treeFile" accept="application/json" />
+                    </div>
+                    <button id="loadBtn" class="btn btn-primary">Cargar Estructura</button>
                 </div>
             </div>
 
-            <!-- Keywords and Dropdown Filters -->
-            <div class="keywords-section">
-                <div class="keywords-label">
-                    Keywords
-                    <div class="help-icon">?</div>
-                </div>
-                <div class="search-input">
-                    <input type="text" placeholder="Search" id="keywords">
-                    <button class="search-btn">🔍</button>
-                </div>
+            <!-- Cascading Selects -->
+            <div class="cascading-selects" id="selects">
+                <!-- Los selects se generan dinámicamente -->
             </div>
 
-            <div class="dropdown-filters">
-                <div class="dropdown-field">
-                    <select id="branches">
-                        <option value="">All branches</option>
-                        <option value="physics">Physics</option>
-                        <option value="chemistry">Chemistry</option>
-                        <option value="biology">Biology</option>
-                    </select>
-                    <div class="dropdown-arrow">▼</div>
-                </div>
-                <div class="dropdown-field">
-                    <select id="services">
-                        <option value="">All services</option>
-                        <option value="calibration">Calibration</option>
-                        <option value="measurement">Measurement</option>
-                        <option value="testing">Testing</option>
-                    </select>
-                    <div class="dropdown-arrow">▼</div>
-                </div>
-                <div class="dropdown-field">
-                    <select id="sub-services">
-                        <option value="">All sub services</option>
-                        <option value="electrical">Electrical</option>
-                        <option value="mechanical">Mechanical</option>
-                        <option value="optical">Optical</option>
-                    </select>
-                    <div class="dropdown-arrow">▼</div>
-                </div>
-                <div class="dropdown-field">
-                    <select id="individual-service">
-                        <option value="">Individual service</option>
-                        <option value="voltage">Voltage</option>
-                        <option value="frequency">Frequency</option>
-                        <option value="resistance">Resistance</option>
-                    </select>
-                    <div class="dropdown-arrow">▼</div>
-                </div>
+            <!-- Status and Controls -->
+            <div class="status-controls">
+                <div class="status-badge default" id="status">Estructura: —</div>
+                <button id="clearBtn" class="btn btn-secondary">Limpiar Selección</button>
+                <button id="queryBtn" class="btn btn-primary">Consultar</button>
             </div>
 
-            <!-- Other Filters -->
-            <div class="other-filters">
-                <div class="other-filters-label">OTHER FILTERS</div>
-                <button class="expand-btn">+</button>
+            <!-- Data Source Section -->
+            <div class="data-source-section">
+                <h3>Fuente de Datos</h3>
+                <div class="source-controls">
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="source" value="api"> API BIPM
+                        </label>
+                        <label>
+                            <input type="radio" name="source" value="local" checked> JSON Local
+                        </label>
+                    </div>
+                    <div class="local-file-controls" id="localWrap">
+                        <div class="form-group">
+                            <label for="respUrl">Ruta del JSON local</label>
+                            <input type="text" id="respUrl" value="CMC_EM_MUNDIAL.json" />
+                        </div>
+                        <div class="form-group">
+                            <label for="respFile">Cargar archivo</label>
+                            <input type="file" id="respFile" accept="application/json" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="countryHint">Países coincidentes</label>
+                        <select id="countryHint" disabled></select>
+                    </div>
+                </div>
             </div>
 
             <!-- Action Buttons -->
             <div class="action-buttons">
-                <button class="btn btn-reset" onclick="resetForm()">RESET</button>
-                <button class="btn btn-apply" onclick="applyCriteria()">APPLY CRITERIA</button>
-                <button class="btn btn-advanced" onclick="window.location.href='/advanced_search'">BÚSQUEDA AVANZADA</button>
+                <button class="btn btn-success" onclick="window.location.href='/advanced_search'">BÚSQUEDA AVANZADA</button>
             </div>
         </div>
 
-        <!-- API Query Section -->
-        <div id="api-section" class="results-section">
-            <h3>Consulta a la API del BIPM</h3>
-            <form id="query-form">
-                <div class="form-group">
-                    <label for="metrologyArea">Área Metrología:</label>
-                    <input type="text" id="metrologyArea" value="EM">
-                </div>
-                
-                <div class="form-group">
-                    <label for="physicsCode">Código Física:</label>
-                    <input type="text" id="physicsCode" value="5.2.1">
-                </div>
-
-                <div class="form-group">
-                    <label for="countries">Países (ISO):</label>
-                    <input type="text" id="countries" value="AR">
-                </div>
-                
-                <button type="submit" class="submit-btn">Consultar API y Buscar Tablas</button>
-            </form>
-            <div id="api-status" class="status hidden"></div>
-        </div>
-
         <!-- Results Section -->
-        <div id="results-section" class="results-section">
-            <h3>Resultados de la Búsqueda</h3>
+        <div id="results-section" class="results-section hidden">
+            <h3>Resultados de la Consulta</h3>
+            <div class="results-controls">
+                <button id="expand-all-btn" class="btn btn-secondary" onclick="expandAll()">Expandir Todo</button>
+                <button id="collapse-all-btn" class="btn btn-secondary" onclick="collapseAll()">Colapsar Todo</button>
+                <button id="copy-json-btn" class="btn btn-secondary" onclick="copyJSON()">Copiar JSON</button>
+            </div>
+            <div class="results-content" id="resultBox">—</div>
             
-            <div id="lookup-section" class="hidden">
+            <!-- Lookup Section -->
+            <div id="lookup-section" class="lookup-section hidden">
                 <h4>Búsqueda de Incertidumbre</h4>
                 <p>Tablas encontradas en el archivo: <b id="filename-display"></b></p>
                 
-                <form id="lookup-form">
+                <form id="lookup-form" class="lookup-form">
                     <div class="form-group">
                         <label for="table-selector">Seleccionar Tabla:</label>
                         <select id="table-selector" required></select>
@@ -493,109 +636,545 @@
     </div>
 
     <script>
-        // Category box click functionality
-        document.querySelectorAll('.category-box').forEach(box => {
-            box.addEventListener('click', function() {
-                // Add your category selection logic here
-                console.log('Category selected:', this.querySelector('.category-title').textContent);
-            });
-        });
+        // Configuración de campos
+        const FIELDS = [
+            'metrologyAreaLabel', 'countryValue', 'branchValue', 'serviceValue', 
+            'subServiceValue', 'individualServiceValue', 'instrument', 'instrumentMethod'
+        ];
 
-        // Reset form functionality
-        function resetForm() {
-            document.getElementById('keywords').value = '';
-            document.getElementById('branches').selectedIndex = 0;
-            document.getElementById('services').selectedIndex = 0;
-            document.getElementById('sub-services').selectedIndex = 0;
-            document.getElementById('individual-service').selectedIndex = 0;
-            
-            // Reset API form
-            document.getElementById('metrologyArea').value = 'EM';
-            document.getElementById('physicsCode').value = '5.2.1';
-            document.getElementById('countries').value = 'AR';
-            
-            // Hide lookup section
-            document.getElementById('lookup-section').classList.add('hidden');
-            
-            // Clear status messages
-            document.getElementById('api-status').classList.add('hidden');
-            document.getElementById('lookup-result').classList.add('hidden');
+        const API_URL = 'https://www.bipm.org/api/kcdb/cmc/searchData/physics';
+        const DEFAULT_TREE_URL = 'cmc_category_tree.json';
+        const DEFAULT_LOCAL_URL = 'CMC_EM_MUNDIAL.json';
+        const SPLIT_RE = /\s*[,;/]\s*/;
+
+        // Estado de la aplicación
+        const state = {
+            tree: null,
+            selections: Array(FIELDS.length).fill(null),
+            source: 'local',
+            localData: null,
+        };
+
+        // Elementos DOM
+        const selectsGrid = document.getElementById('selects');
+        const status = document.getElementById('status');
+        const countryHint = document.getElementById('countryHint');
+        const resultBox = document.getElementById('resultBox');
+        const respUrlInput = document.getElementById('respUrl');
+        const localWrap = document.getElementById('localWrap');
+
+        // Funciones de utilidad
+        function setStatus(msg, type = 'default') {
+            status.textContent = msg;
+            status.className = `status-badge ${type}`;
         }
 
-        // Apply criteria functionality
-        function applyCriteria() {
-            const keywords = document.getElementById('keywords').value;
-            const branches = document.getElementById('branches').value;
-            const services = document.getElementById('services').value;
-            const subServices = document.getElementById('sub-services').value;
-            const individualService = document.getElementById('individual-service').value;
-
-            // Show status
-            showStatus(document.getElementById('api-status'), 'Criterios aplicados. Ahora puedes consultar la API del BIPM.', 'success');
+        function showStatus(element, message, type) {
+            element.textContent = message;
+            element.className = 'status';
+            if (type === 'success') {
+                element.classList.add('success');
+            } else if (type === 'error') {
+                element.classList.add('error');
+            } else if (type === 'process') {
+                element.classList.add('process');
+            }
+            element.classList.remove('hidden');
         }
 
-        // Original API query form functionality
-        document.getElementById('query-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            showStatus(document.getElementById('api-status'), 'Consultando API...', 'process');
+        // Función para renderizar JSON de forma interactiva
+        function renderJSON(container, data) {
+            container.innerHTML = '';
+            currentJSONData = data; // Guardar el JSON actual
+            const jsonViewer = document.createElement('div');
+            jsonViewer.className = 'json-viewer';
+            jsonViewer.appendChild(renderJSONNode(data, 0));
+            container.appendChild(jsonViewer);
+        }
 
-            const payload = {
-                page: 0,
-                pageSize: 20,
-                showTable: true,
-                metrologyAreaLabel: document.getElementById('metrologyArea').value,
-                physicsCode: document.getElementById('physicsCode').value,
-                countries: document.getElementById('countries').value.split(',').map(c => c.trim()),
-            };
-
-            try {
-                const response = await fetch('/api/query_bipm', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                const result = await response.json();
-
-                if (!response.ok || !result.success) {
-                    throw new Error(result.message || 'Error en la respuesta del servidor.');
+        function renderJSONNode(data, level) {
+            const wrapper = document.createElement('div');
+            
+            if (data === null) {
+                const nullSpan = document.createElement('span');
+                nullSpan.className = 'json-null';
+                nullSpan.textContent = 'null';
+                wrapper.appendChild(nullSpan);
+                return wrapper;
+            }
+            
+            if (typeof data === 'boolean') {
+                const boolSpan = document.createElement('span');
+                boolSpan.className = 'json-boolean';
+                boolSpan.textContent = data.toString();
+                wrapper.appendChild(boolSpan);
+                return wrapper;
+            }
+            
+            if (typeof data === 'number') {
+                const numSpan = document.createElement('span');
+                numSpan.className = 'json-number';
+                numSpan.textContent = data.toString();
+                wrapper.appendChild(numSpan);
+                return wrapper;
+            }
+            
+            if (typeof data === 'string') {
+                const strSpan = document.createElement('span');
+                strSpan.className = 'json-string';
+                strSpan.textContent = `"${data}"`;
+                wrapper.appendChild(strSpan);
+                return wrapper;
+            }
+            
+            if (Array.isArray(data)) {
+                if (data.length === 0) {
+                    wrapper.textContent = '[]';
+                    return wrapper;
                 }
-
-                showStatus(document.getElementById('api-status'), result.message, 'success');
                 
-                // Store filename for lookup
-                window.savedFilename = result.filename;
-                document.getElementById('filename-display').textContent = result.filename;
+                const toggle = document.createElement('span');
+                toggle.className = 'json-toggle';
+                toggle.textContent = '▼';
+                toggle.onclick = () => toggleNode(toggle, content);
+                wrapper.appendChild(toggle);
+                
+                wrapper.appendChild(document.createTextNode('['));
+                
+                const content = document.createElement('div');
+                content.className = 'json-indent';
+                
+                data.forEach((item, index) => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.appendChild(renderJSONNode(item, level + 1));
+                    if (index < data.length - 1) {
+                        itemDiv.appendChild(document.createTextNode(','));
+                    }
+                    content.appendChild(itemDiv);
+                });
+                
+                wrapper.appendChild(content);
+                wrapper.appendChild(document.createTextNode(']'));
+                return wrapper;
+            }
+            
+            if (typeof data === 'object') {
+                const keys = Object.keys(data);
+                if (keys.length === 0) {
+                    wrapper.textContent = '{}';
+                    return wrapper;
+                }
+                
+                const toggle = document.createElement('span');
+                toggle.className = 'json-toggle';
+                toggle.textContent = '▼';
+                toggle.onclick = () => toggleNode(toggle, content);
+                wrapper.appendChild(toggle);
+                
+                wrapper.appendChild(document.createTextNode('{'));
+                
+                const content = document.createElement('div');
+                content.className = 'json-indent';
+                
+                keys.forEach((key, index) => {
+                    const keyDiv = document.createElement('div');
+                    const keySpan = document.createElement('span');
+                    keySpan.className = 'json-key';
+                    keySpan.textContent = `"${key}"`;
+                    keyDiv.appendChild(keySpan);
+                    keyDiv.appendChild(document.createTextNode(': '));
+                    keyDiv.appendChild(renderJSONNode(data[key], level + 1));
+                    if (index < keys.length - 1) {
+                        keyDiv.appendChild(document.createTextNode(','));
+                    }
+                    content.appendChild(keyDiv);
+                });
+                
+                wrapper.appendChild(content);
+                wrapper.appendChild(document.createTextNode('}'));
+                return wrapper;
+            }
+            
+            return wrapper;
+        }
 
-                // Fill table selector
+        function toggleNode(toggle, content) {
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                toggle.textContent = '▼';
+            } else {
+                content.style.display = 'none';
+                toggle.textContent = '▶';
+            }
+        }
+
+        // Variables globales para el JSON actual
+        let currentJSONData = null;
+
+        // Función para expandir todo el JSON
+        function expandAll() {
+            const toggles = document.querySelectorAll('.json-toggle');
+            toggles.forEach(toggle => {
+                const content = toggle.nextSibling.nextSibling;
+                if (content && content.style.display === 'none') {
+                    content.style.display = 'block';
+                    toggle.textContent = '▼';
+                }
+            });
+        }
+
+        // Función para colapsar todo el JSON
+        function collapseAll() {
+            const toggles = document.querySelectorAll('.json-toggle');
+            toggles.forEach(toggle => {
+                const content = toggle.nextSibling.nextSibling;
+                if (content && content.style.display !== 'none') {
+                    content.style.display = 'none';
+                    toggle.textContent = '▶';
+                }
+            });
+        }
+
+        // Función para copiar el JSON al portapapeles
+        function copyJSON() {
+            if (currentJSONData) {
+                const jsonString = JSON.stringify(currentJSONData, null, 2);
+                navigator.clipboard.writeText(jsonString).then(() => {
+                    // Mostrar mensaje de éxito
+                    const copyBtn = document.getElementById('copy-json-btn');
+                    const originalText = copyBtn.textContent;
+                    copyBtn.textContent = '¡Copiado!';
+                    copyBtn.style.backgroundColor = '#059669';
+                    setTimeout(() => {
+                        copyBtn.textContent = originalText;
+                        copyBtn.style.backgroundColor = '';
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Error al copiar:', err);
+                    alert('Error al copiar al portapapeles');
+                });
+            }
+        }
+
+        // Funciones del árbol y opciones dinámicas
+        function existsPath(node, level, selections) {
+            if (!node || typeof node !== 'object') return false;
+            if (level === FIELDS.length) return true;
+            const sel = selections[level];
+            const keys = Object.keys(node).filter(k => k !== '_count');
+            if (sel) {
+                if (!node[sel]) return false;
+                return existsPath(node[sel], level + 1, selections);
+            } else {
+                for (const k of keys) {
+                    if (existsPath(node[k], level + 1, selections)) return true;
+                }
+                return false;
+            }
+        }
+
+        function optionsAtLevel(targetLevel, selections) {
+            const out = new Set();
+            function dfs(node, level) {
+                if (!node || typeof node !== 'object') return;
+                const keys = Object.keys(node).filter(k => k !== '_count');
+                if (level === targetLevel) {
+                    for (const k of keys) {
+                        const nextSel = selections.slice();
+                        nextSel[level] = k;
+                        if (existsPath(node[k], level + 1, nextSel)) out.add(k);
+                    }
+                    return;
+                }
+                const sel = selections[level];
+                if (sel) {
+                    if (node[sel]) dfs(node[sel], level + 1);
+                } else {
+                    for (const k of keys) {
+                        dfs(node[k], level + 1);
+                    }
+                }
+            }
+            dfs(state.tree, 0);
+            return Array.from(out).sort();
+        }
+
+        function updateCountryHint() {
+            const idx = FIELDS.indexOf('countryValue');
+            const opts = optionsAtLevel(idx, state.selections);
+            countryHint.innerHTML = '';
+            const ph = document.createElement('option');
+            ph.textContent = opts.length ? `${opts.length} país(es) coincidente(s)` : '— sin coincidencias —';
+            countryHint.appendChild(ph);
+            for (const v of opts) {
+                const o = document.createElement('option');
+                o.value = v;
+                o.textContent = v;
+                countryHint.appendChild(o);
+            }
+            countryHint.disabled = true;
+        }
+
+        function createSelect(field, idx) {
+            const wrap = document.createElement('div');
+            wrap.className = 'select-group';
+            
+            const label = document.createElement('label');
+            label.textContent = field;
+            
+            const select = document.createElement('select');
+            select.id = `sel-${field}`;
+            
+            const ph = document.createElement('option');
+            ph.value = '';
+            ph.textContent = `Seleccionar ${field}…`;
+            select.appendChild(ph);
+            
+            select.addEventListener('change', () => {
+                const value = select.value || null;
+                state.selections[idx] = value;
+                repopulateAll();
+            });
+            
+            wrap.appendChild(label);
+            wrap.appendChild(select);
+            
+            // Agregar flecha
+            const arrow = document.createElement('div');
+            arrow.className = 'select-arrow';
+            arrow.textContent = '▼';
+            wrap.appendChild(arrow);
+            
+            return wrap;
+        }
+
+        function repopulateAll() {
+            for (let i = 0; i < FIELDS.length; i++) {
+                const select = document.getElementById(`sel-${FIELDS[i]}`);
+                const options = optionsAtLevel(i, state.selections);
+                const prev = state.selections[i];
+                select.innerHTML = '';
+                const ph = document.createElement('option');
+                ph.value = '';
+                ph.textContent = `Seleccionar ${FIELDS[i]}…`;
+                select.appendChild(ph);
+                options.forEach(v => {
+                    const o = document.createElement('option');
+                    o.value = v;
+                    o.textContent = v;
+                    select.appendChild(o);
+                });
+                if (prev && options.includes(prev)) select.value = prev;
+                else state.selections[i] = null;
+                select.disabled = options.length === 0;
+            }
+            if (!state.selections[FIELDS.indexOf('countryValue')]) updateCountryHint();
+            else {
+                countryHint.innerHTML = '';
+                const o = document.createElement('option');
+                o.textContent = `País seleccionado: ${state.selections[FIELDS.indexOf('countryValue')]}`;
+                countryHint.appendChild(o);
+            }
+        }
+
+        // Funciones de carga
+        async function fetchJSON(url) {
+            const res = await fetch(url, { cache: 'no-store' });
+            if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+            return res.json();
+        }
+
+        async function loadFromUrl(url) {
+            return fetchJSON(url);
+        }
+
+        function loadFromFile(file) {
+            return new Promise((resolve, reject) => {
+                const fr = new FileReader();
+                fr.onerror = () => reject(fr.error);
+                fr.onload = () => {
+                    try {
+                        resolve(JSON.parse(fr.result));
+                    } catch (e) {
+                        reject(e);
+                    }
+                };
+                fr.readAsText(file, 'utf-8');
+            });
+        }
+
+        async function handleLoad() {
+            const file = document.getElementById('treeFile').files[0];
+            const url = (document.getElementById('treeUrl').value.trim()) || DEFAULT_TREE_URL;
+            try {
+                setStatus('Cargando…', 'loading');
+                const data = file ? await loadFromFile(file) : await loadFromUrl(url);
+                state.tree = data;
+                setStatus('Estructura: OK', 'success');
+                buildUI();
+            } catch (err) {
+                console.error(err);
+                setStatus('Error al cargar estructura', 'error');
+                alert('No se pudo cargar el árbol: ' + err.message);
+            }
+        }
+
+        function buildUI() {
+            selectsGrid.innerHTML = '';
+            FIELDS.forEach((f, i) => selectsGrid.appendChild(createSelect(f, i)));
+            repopulateAll();
+        }
+
+        // Funciones de consulta
+        function getArrayFromResponse(resp) {
+            if (Array.isArray(resp)) return resp;
+            if (resp && typeof resp === 'object') {
+                if (Array.isArray(resp.data)) return resp.data;
+                if (Array.isArray(resp.results)) return resp.results;
+            }
+            return [];
+        }
+
+        function normStr(s) {
+            return (typeof s === 'string') ? s.trim() : s;
+        }
+
+        function recMatches(rec, payload) {
+            for (const f of FIELDS) {
+                if (!(f in payload)) continue;
+                const target = normStr(payload[f]);
+                const val = rec[f];
+                if (val == null) return false;
+                if (f === 'instrument' || f === 'instrumentMethod') {
+                    if (typeof val === 'string') {
+                        const parts = val.split(SPLIT_RE).map(v => v.trim()).filter(Boolean);
+                        if (!parts.includes(target)) return false;
+                    } else if (Array.isArray(val)) {
+                        if (!val.map(normStr).includes(target)) return false;
+                    } else {
+                        return false;
+                    }
+                } else {
+                    if (Array.isArray(val)) {
+                        if (!val.map(normStr).includes(target)) return false;
+                    } else if (normStr(val) !== target) return false;
+                }
+            }
+            return true;
+        }
+
+        async function runQuery() {
+            const payload = { page: 0, pageSize: 10000, showTable: true };
+            const path = [];
+            FIELDS.forEach((f, i) => {
+                if (state.selections[i]) {
+                    payload[f] = state.selections[i];
+                    path.push(`${f}:${state.selections[i]}`);
+                }
+            });
+
+            resultBox.innerHTML = '<div class="loading-json">Consultando…</div>';
+            document.getElementById('results-section').classList.remove('hidden');
+
+            if (state.source === 'api') {
+                try {
+                    const res = await fetch(API_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    const txt = await res.text();
+                    try {
+                        const json = JSON.parse(txt);
+                        renderJSON(resultBox, json);
+                        
+                        // Procesar resultados para lookup
+                        if (json.data && json.data.length > 0) {
+                            processResultsForLookup(json.data, 'API Response');
+                        }
+                    } catch {
+                        resultBox.innerHTML = `<pre class="error-json">${txt}</pre>`;
+                    }
+                    if (!res.ok) {
+                        resultBox.innerHTML = `<div class="error-json">Error ${res.status}:\n${resultBox.innerHTML}</div>`;
+                    }
+                } catch (err) {
+                    resultBox.innerHTML = `<div class="error-json">Error al consultar la API: ${err.message}</div>`;
+                }
+            } else {
+                try {
+                    if (!state.localData) {
+                        const url = (respUrlInput.value || DEFAULT_LOCAL_URL).trim();
+                        try {
+                            state.localData = await loadFromUrl(url);
+                        } catch (e) {
+                            resultBox.innerHTML = `<div class="error-json">No se pudo cargar el JSON local (${url}).</div>`;
+                            return;
+                        }
+                    }
+                    const arr = getArrayFromResponse(state.localData);
+                    const filtered = arr.filter(r => recMatches(r, payload));
+                    const shaped = {
+                        page: 0,
+                        pageSize: filtered.length,
+                        numberOfElements: filtered.length,
+                        data: filtered
+                    };
+                    renderJSON(resultBox, shaped);
+                    
+                    // Procesar resultados para lookup
+                    if (filtered.length > 0) {
+                        processResultsForLookup(filtered, 'Local JSON');
+                    }
+                } catch (err) {
+                    resultBox.innerHTML = `<div class="error-json">Error al filtrar JSON local: ${err.message}</div>`;
+                }
+            }
+        }
+
+        function processResultsForLookup(data, source) {
+            // Buscar tablas de incertidumbre en los resultados
+            const tables = [];
+            data.forEach((item, index) => {
+                if (item.uncertaintyTable && Array.isArray(item.uncertaintyTable)) {
+                    item.uncertaintyTable.forEach((table, tableIndex) => {
+                        tables.push({
+                            id: `${index}_${tableIndex}`,
+                            kcdbCode: item.kcdbCode || 'N/A',
+                            quantityValue: table.quantityValue || 'N/A',
+                            source: source
+                        });
+                    });
+                }
+            });
+
+            if (tables.length > 0) {
+                // Mostrar sección de lookup
+                document.getElementById('lookup-section').classList.remove('hidden');
+                document.getElementById('filename-display').textContent = source;
+
+                // Llenar selector de tablas
                 const tableSelector = document.getElementById('table-selector');
                 tableSelector.innerHTML = '<option value="" disabled selected>-- Seleccione una tabla --</option>';
-                
-                if (result.tables.length > 0) {
-                    result.tables.forEach(table => {
-                        const option = document.createElement('option');
-                        option.value = table.id;
-                        option.textContent = `${table.kcdbCode} - ${table.quantityValue}`;
-                        tableSelector.appendChild(option);
-                    });
-                    document.getElementById('lookup-section').classList.remove('hidden');
-                } else {
-                    showStatus(document.getElementById('api-status'), `${result.message}. No se encontraron tablas de incertidumbre válidas.`, 'error');
-                    document.getElementById('lookup-section').classList.add('hidden');
-                }
+                tables.forEach(table => {
+                    const option = document.createElement('option');
+                    option.value = table.id;
+                    option.textContent = `${table.kcdbCode} - ${table.quantityValue}`;
+                    tableSelector.appendChild(option);
+                });
 
-            } catch (error) {
-                showStatus(document.getElementById('api-status'), `Error: ${error.message}`, 'error');
+                // Guardar datos para lookup
+                window.savedData = { data, tables, source };
             }
-        });
+        }
 
-        // Lookup form functionality
+        // Funciones de lookup
         document.getElementById('lookup-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             showStatus(document.getElementById('lookup-result'), 'Buscando...', 'process');
 
             const payload = {
-                filename: window.savedFilename,
+                filename: window.savedData?.source || 'Unknown',
                 table_id: document.getElementById('table-selector').value,
                 voltage: document.getElementById('voltage').value,
                 frequency: document.getElementById('frequency').value,
@@ -613,7 +1192,7 @@
                 if (!response.ok || !result.success) {
                     throw new Error(result.message || 'Error en la búsqueda.');
                 }
-                
+
                 const uncertainty = result.result;
                 if (uncertainty !== null) {
                     showStatus(document.getElementById('lookup-result'), `Resultado encontrado: ${uncertainty}`, 'success');
@@ -626,25 +1205,60 @@
             }
         });
 
-        // Utility function for showing status messages
-        function showStatus(element, message, type) {
-            element.textContent = message;
-            element.className = 'status';
-            if (type === 'success') {
-                element.classList.add('success');
-            } else if (type === 'error') {
-                element.classList.add('error');
-            } else if (type === 'process') {
-                element.classList.add('process');
-            }
-            element.classList.remove('hidden');
+        // Funciones de control
+        function clearAll() {
+            state.selections = Array(FIELDS.length).fill(null);
+            repopulateAll();
         }
 
-        // Expand other filters functionality
-        document.querySelector('.expand-btn').addEventListener('click', function() {
-            // Add your expand logic here
-            console.log('Expanding other filters...');
+        // Event listeners
+        document.getElementById('loadBtn').addEventListener('click', handleLoad);
+        document.getElementById('clearBtn').addEventListener('click', clearAll);
+        document.getElementById('queryBtn').addEventListener('click', runQuery);
+
+        // Control de fuente de datos
+        const sourceRadios = document.getElementsByName('source');
+        Array.from(sourceRadios).forEach(r => r.addEventListener('change', () => {
+            state.source = document.querySelector('input[name="source"]:checked').value;
+            localWrap.style.display = state.source === 'local' ? '' : 'none';
+        }));
+
+        // Carga de archivo local
+        document.getElementById('respFile').addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            try {
+                state.localData = await loadFromFile(file);
+                alert('JSON local cargado correctamente.');
+            } catch (err) {
+                alert('Error al leer JSON local: ' + err.message);
+            }
         });
+
+        // Carga inicial
+        (async () => {
+            // Selección por defecto: JSON local
+            const localRadio = document.querySelector('input[name="source"][value="local"]');
+            if (localRadio) localRadio.checked = true;
+
+            // Intentar cargar árbol por defecto
+            try {
+                const turl = (document.getElementById('treeUrl').value || DEFAULT_TREE_URL).trim();
+                const autoTree = await fetchJSON(turl);
+                state.tree = autoTree;
+                setStatus('Estructura: OK', 'success');
+                buildUI();
+            } catch (err) {
+                setStatus('Estructura: — (no se pudo cargar por defecto)', 'default');
+            }
+
+            // Intentar cargar JSON local por defecto
+            try {
+                const rurl = (respUrlInput?.value || DEFAULT_LOCAL_URL).trim();
+                const autoResp = await fetchJSON(rurl);
+                state.localData = autoResp;
+            } catch {}
+        })();
     </script>
 </body>
 </html>

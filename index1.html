@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buscador CMC — Cascada (API o JSON local)</title>
+  <style>
+    /* ——— Theme inspirado en el estilo visual de BIPM KCDB Advanced Search ——— */
+    :root {
+      --bg: #f6f8fb;        /* fondo claro */
+      --panel: #ffffff;      /* tarjetas blancas */
+      --text: #1f2937;       /* gris-900 */
+      --muted: #6b7280;      /* gris-500 */
+      --muted-2: #4b5563;    /* gris-600 */
+      --border: #e5e7eb;     /* gris-200 */
+      --border-strong: #d1d5db; /* gris-300 */
+      --accent: #005aa0;     /* azul BIPM aprox */
+      --accent-2: #0b74c9;   /* azul hover */
+      --accent-3: #e6f0fb;   /* azul muy claro */
+      --ring: rgba(0, 90, 160, .25);
+      --success: #0e9f6e;
+      --error: #dc2626;
+      --shadow: 0 10px 24px rgba(15, 23, 42, .06);
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.45;
+    }
+
+    /* Barra superior */
+    .topbar {
+      background: #0a2b4d; color: #fff;
+      padding: 10px 0; font-size: 14px;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+    .crumbs { opacity: .9; }
+    .crumbs a { color: #cfe6ff; text-decoration: none; }
+    .crumbs a:hover { text-decoration: underline; }
+
+    /* Cabecera de página */
+    .pagehead { background: linear-gradient(0deg, var(--bg), #f1f5fb); border-bottom: 1px solid var(--border); }
+    .pagehead .container { padding: 22px 16px; }
+    .pagehead h1 { margin: 0 0 4px; font-size: 26px; font-weight: 700; letter-spacing: .2px; }
+    .pagehead p { margin: 0; color: var(--muted); }
+
+    /* Tarjeta principal */
+    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+
+    /* Secciones dentro de la tarjeta */
+    .section { padding: 18px 20px; border-top: 1px solid var(--border); }
+    .section:first-of-type { border-top: 0; }
+    .section h2 { font-size: 16px; margin: 0 0 12px; color: var(--muted-2); font-weight: 700; }
+
+    /* Grid y filas */
+    .row { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; align-items: end; }
+    .col-12{ grid-column: span 12; }
+    .col-8 { grid-column: span 8; }
+    .col-7 { grid-column: span 7; }
+    .col-6 { grid-column: span 6; }
+    .col-5 { grid-column: span 5; }
+    .col-4 { grid-column: span 4; }
+    .col-3 { grid-column: span 3; }
+    .col-2 { grid-column: span 2; }
+
+    /* Inputs */
+    label { display:block; font-size: 12px; color: var(--muted-2); margin: 0 0 6px; font-weight: 600; }
+    input[type="text"], select {
+      width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
+      background: #fff; color: var(--text); outline: none; transition: box-shadow .15s, border-color .15s;
+    }
+    input[type="text"]:focus, select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--ring); }
+    input[type="file"]{ color: var(--muted); font-size: 13px; }
+
+    /* Botones */
+    .btn { appearance: none; border: 1px solid var(--border-strong); background: #fff; color: var(--text); padding: 10px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all .15s; }
+    .btn:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+    .btn:active { transform: translateY(1px); }
+    .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .btn.primary:hover { background: var(--accent-2); border-color: var(--accent-2); }
+    .btn.ghost { background: transparent; }
+
+    /* Badges y cajas */
+    .badge { display:inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; border: 1px solid var(--border-strong); color: var(--muted-2); background: #fff; }
+    .payload, .results { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; overflow: auto; }
+    .payload { max-height: 240px; }
+    .results { max-height: 420px; }
+
+    /* Controles inline */
+    .inline { display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+    .inline label { margin: 0; font-weight: 500; }
+
+    /* Separadores / hints */
+    .muted { color: var(--muted); }
+    .hr { border-top: 1px solid var(--border); margin: 8px 0; }
+
+    /* Responsive */
+    @media (max-width: 920px){ .row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="crumbs">KCDB ▸ CMC ▸ Búsqueda avanzada</div>
+    </div>
+  </div>
+
+  <div class="pagehead">
+    <div class="container">
+      <h1>Búsqueda avanzada de CMC</h1>
+      <p>Refiná por área de metrología, país, servicio e instrumento. Podés consultar la API o un JSON local con resultados KCDB.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="card">
+      <div class="section">
+        <h2>Datos de referencia</h2>
+        <div class="row">
+          <div class="col-7">
+            <label for="treeUrl">Ruta del archivo del árbol</label>
+            <input id="treeUrl" type="text" value="cmc_category_tree.json" />
+          </div>
+          <div class="col-3">
+            <label for="treeFile">…o cargá el árbol desde archivo</label>
+            <input id="treeFile" type="file" accept="application/json" />
+          </div>
+          <div class="col-2">
+            <button id="loadBtn" class="btn primary" title="Cargar estructura">Cargar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Filtros en cascada</h2>
+        <div class="row" id="selects"></div>
+        <div class="row" style="margin-top:10px;">
+          <div class="col-4">
+            <label for="countryHint">Países coincidentes (informativo)</label>
+            <select id="countryHint" disabled></select>
+          </div>
+          <div class="col-4">
+            <button id="clearBtn" class="btn">Limpiar selección</button>
+          </div>
+          <div class="col-4" style="display:flex; align-items:center; justify-content:flex-end;">
+            <span class="badge" id="status">Estructura: —</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Fuente de datos</h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="inline">
+              <label><input type="radio" name="source" value="api"> API BIPM</label>
+              <label><input type="radio" name="source" value="local" checked> JSON local (respuesta KCDB)</label>
+            </div>
+          </div>
+          <div class="col-4" id="localWrap">
+            <label for="respUrl">Ruta del JSON local</label>
+            <input id="respUrl" type="text" value="CMC_EM_MUNDIAL.json" />
+            <label for="respFile" class="muted" style="margin-top:8px;">…o cargar archivo</label>
+            <input id="respFile" type="file" accept="application/json" />
+          </div>
+          <div class="col-2" style="display:flex; align-items:end;">
+            <button id="queryBtn" class="btn primary" style="width:100%">Consultar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Payload y ruta</h2>
+        <div class="row">
+          <div class="col-6">
+            <label>Payload de consulta</label>
+            <pre class="payload" id="payloadBox">{}</pre>
+          </div>
+          <div class="col-6">
+            <label>Ruta seleccionada en el árbol</label>
+            <pre class="payload" id="pathBox">[]</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Resultado</h2>
+        <div class="row">
+          <div class="col-12">
+            <pre class="results" id="resultBox">—</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  const FIELDS = [
+    'metrologyAreaLabel', 'countryValue', 'branchValue', 'serviceValue', 'subServiceValue', 'individualServiceValue', 'instrument', 'instrumentMethod'
+  ];
+
+  const API_URL = 'https://www.bipm.org/api/kcdb/cmc/searchData/physics';
+  const DEFAULT_TREE_URL = 'cmc_category_tree.json';
+  const DEFAULT_LOCAL_URL = 'CMC_EM_MUNDIAL.json';
+  const SPLIT_RE = /\s*[,;/]\s*/;
+
+  const state = {
+    tree: null,
+    selections: Array(FIELDS.length).fill(null),
+    source: 'local',            // por defecto JSON local
+    localData: null,
+  };
+
+  // ===== Helpers DOM =====
+  const el = (sel) => document.querySelector(sel);
+  const selectsGrid = el('#selects');
+  const payloadBox = el('#payloadBox');
+  const pathBox = el('#pathBox');
+  const status = el('#status');
+  const countryHint = el('#countryHint');
+  const resultBox = el('#resultBox');
+  const respUrlInput = el('#respUrl');
+
+  function setStatus(msg){ status.textContent = msg; }
+
+  // ===== Árbol y opciones dinámicas =====
+  function existsPath(node, level, selections){
+    if(!node || typeof node !== 'object') return false;
+    if(level === FIELDS.length) return true;
+    const sel = selections[level];
+    const keys = Object.keys(node).filter(k => k !== '_count');
+    if(sel){
+      if(!node[sel]) return false;
+      return existsPath(node[sel], level+1, selections);
+    } else {
+      for(const k of keys){ if(existsPath(node[k], level+1, selections)) return true; }
+      return false;
+    }
+  }
+
+  function optionsAtLevel(targetLevel, selections){
+    const out = new Set();
+    function dfs(node, level){
+      if(!node || typeof node !== 'object') return;
+      const keys = Object.keys(node).filter(k => k !== '_count');
+      if(level === targetLevel){
+        for(const k of keys){
+          const nextSel = selections.slice();
+          nextSel[level] = k;
+          if(existsPath(node[k], level+1, nextSel)) out.add(k);
+        }
+        return;
+      }
+      const sel = selections[level];
+      if(sel){ if(node[sel]) dfs(node[sel], level+1); }
+      else { for(const k of keys){ dfs(node[k], level+1); } }
+    }
+    dfs(state.tree, 0);
+    return Array.from(out).sort();
+  }
+
+  function updateCountryHint(){
+    const idx = FIELDS.indexOf('countryValue');
+    const opts = optionsAtLevel(idx, state.selections);
+    countryHint.innerHTML = '';
+    const ph = document.createElement('option');
+    ph.textContent = opts.length ? `${opts.length} país(es) coincidente(s)` : '— sin coincidencias —';
+    countryHint.appendChild(ph);
+    for(const v of opts){ const o=document.createElement('option'); o.value=v; o.textContent=v; countryHint.appendChild(o); }
+    countryHint.disabled = true;
+  }
+
+  function createSelect(field, idx){
+    const wrap = document.createElement('div');
+    wrap.className = 'col-3';
+    const label = document.createElement('label'); label.textContent = field;
+    const select = document.createElement('select'); select.id = `sel-${field}`;
+    const ph = document.createElement('option'); ph.value=''; ph.textContent=`Seleccionar ${field}…`; select.appendChild(ph);
+    select.addEventListener('change', () => {
+      const value = select.value || null; state.selections[idx] = value; repopulateAll(); renderPayload();
+    });
+    wrap.appendChild(label); wrap.appendChild(select); return wrap;
+  }
+
+  function repopulateAll(){
+    for(let i=0; i<FIELDS.length; i++){
+      const select = el(`#sel-${FIELDS[i]}`);
+      const options = optionsAtLevel(i, state.selections);
+      const prev = state.selections[i];
+      select.innerHTML = '';
+      const ph = document.createElement('option'); ph.value=''; ph.textContent=`Seleccionar ${FIELDS[i]}…`; select.appendChild(ph);
+      options.forEach(v=>{ const o=document.createElement('option'); o.value=v; o.textContent=v; select.appendChild(o); });
+      if(prev && options.includes(prev)) select.value = prev; else state.selections[i] = null;
+      select.disabled = options.length === 0;
+    }
+    if(!state.selections[FIELDS.indexOf('countryValue')]) updateCountryHint();
+    else {
+      countryHint.innerHTML = '';
+      const o = document.createElement('option'); o.textContent = `País seleccionado: ${state.selections[FIELDS.indexOf('countryValue')]}`; countryHint.appendChild(o);
+    }
+  }
+
+  // ===== Payload =====
+  function renderPayload(){
+    const payload = { page: 0, pageSize: 10000, showTable: true };
+    const path = [];
+    FIELDS.forEach((f, i) => {
+      if(state.selections[i]){ payload[f] = state.selections[i]; path.push(`${f}:${state.selections[i]}`); }
+    });
+    payloadBox.textContent = JSON.stringify(payload, null, 2);
+    pathBox.textContent = JSON.stringify(path, null, 2);
+    return payload;
+  }
+
+  function clearAll(){ state.selections = Array(FIELDS.length).fill(null); repopulateAll(); renderPayload(); }
+  function buildUI(){ const row = el('#selects'); row.innerHTML=''; FIELDS.forEach((f,i)=>row.appendChild(createSelect(f,i))); repopulateAll(); renderPayload(); }
+
+  // ===== Carga utilidades =====
+  async function fetchJSON(url){ const res = await fetch(url, { cache: 'no-store' }); if(!res.ok) throw new Error(`${res.status} ${res.statusText}`); return res.json(); }
+  async function loadFromUrl(url){ return fetchJSON(url); }
+  function loadFromFile(file){ return new Promise((resolve,reject)=>{ const fr=new FileReader(); fr.onerror=()=>reject(fr.error); fr.onload=()=>{ try{ resolve(JSON.parse(fr.result)); }catch(e){ reject(e); } }; fr.readAsText(file,'utf-8'); }); }
+
+  async function handleLoad(){
+    const file = document.getElementById('treeFile').files[0];
+    const url = (document.getElementById('treeUrl').value.trim()) || DEFAULT_TREE_URL;
+    try{ setStatus('Cargando…'); const data = file? await loadFromFile(file) : await loadFromUrl(url); state.tree = data; setStatus('Estructura: OK'); buildUI(); }
+    catch(err){ console.error(err); setStatus('Error al cargar estructura'); alert('No se pudo cargar el árbol: ' + err.message + (location.protocol==='file:' ? '\nSugerencia: abrí el HTML desde un servidor local (no con file://) para permitir fetch de archivos locales.' : '')); }
+  }
+
+  // ===== Fuente de datos (API o local) =====
+  const sourceRadios = document.getElementsByName('source');
+  const localWrap = document.getElementById('localWrap');
+  Array.from(sourceRadios).forEach(r => r.addEventListener('change', () => {
+    state.source = document.querySelector('input[name="source"]:checked').value;
+    localWrap.style.display = state.source === 'local' ? '' : 'none';
+  }));
+
+  document.getElementById('respFile').addEventListener('change', async (e)=>{
+    const file = e.target.files[0]; if(!file) return;
+    try{ state.localData = await loadFromFile(file); alert('JSON local cargado correctamente.'); }
+    catch(err){ alert('Error al leer JSON local: ' + err.message); }
+  });
+
+  // ===== Consulta =====
+  function getArrayFromResponse(resp){
+    if(Array.isArray(resp)) return resp;
+    if(resp && typeof resp === 'object'){
+      if(Array.isArray(resp.data)) return resp.data;
+      if(Array.isArray(resp.results)) return resp.results;
+    }
+    return [];
+  }
+
+  function normStr(s){ return (typeof s === 'string') ? s.trim() : s; }
+  function recMatches(rec, payload){
+    for(const f of FIELDS){
+      if(!(f in payload)) continue; // campo no filtrado
+      const target = normStr(payload[f]);
+      const val = rec[f];
+      if(val == null) return false;
+      if(f === 'instrument' || f === 'instrumentMethod'){
+        if(typeof val === 'string'){
+          const parts = val.split(SPLIT_RE).map(v=>v.trim()).filter(Boolean);
+          if(!parts.includes(target)) return false;
+        } else if(Array.isArray(val)){
+          if(!val.map(normStr).includes(target)) return false;
+        } else { return false; }
+      } else {
+        if(Array.isArray(val)){ if(!val.map(normStr).includes(target)) return false; }
+        else if(normStr(val) !== target) return false;
+      }
+    }
+    return true;
+  }
+
+  async function runQuery(){
+    const payload = renderPayload();
+    resultBox.textContent = 'Consultando…';
+
+    if(state.source === 'api'){
+      try{
+        const res = await fetch(API_URL, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload) });
+        const txt = await res.text();
+        try{ const json = JSON.parse(txt); resultBox.textContent = JSON.stringify(json, null, 2); }
+        catch{ resultBox.textContent = txt; }
+        if(!res.ok){ resultBox.textContent = `Error ${res.status}:\n` + resultBox.textContent; }
+      }catch(err){ resultBox.textContent = 'Error al consultar la API: ' + err.message + '\n\nSi el navegador bloquea por CORS, serví esta página desde un servidor o usá un proxy.'; }
+    } else {
+      // Consulta en JSON local
+      try{
+        if(!state.localData){
+          const url = (respUrlInput.value || DEFAULT_LOCAL_URL).trim();
+          try { state.localData = await loadFromUrl(url); }
+          catch(e){ resultBox.textContent = 'No se pudo cargar el JSON local ('+url+').' + (location.protocol==='file:' ? '\n\nSugerencia: abrí el HTML desde un servidor local (no con file://) para permitir fetch de archivos locales.' : ''); return; }
+        }
+        const arr = getArrayFromResponse(state.localData);
+        const filtered = arr.filter(r => recMatches(r, payload));
+        const shaped = { page: 0, pageSize: filtered.length, numberOfElements: filtered.length, data: filtered };
+        resultBox.textContent = JSON.stringify(shaped, null, 2);
+      }catch(err){ resultBox.textContent = 'Error al filtrar JSON local: ' + err.message; }
+    }
+  }
+
+  // Wire-up
+  document.getElementById('loadBtn').addEventListener('click', handleLoad);
+  document.getElementById('clearBtn').addEventListener('click', (e)=>{ e.preventDefault(); clearAll(); });
+  document.getElementById('queryBtn').addEventListener('click', (e)=>{ e.preventDefault(); runQuery(); });
+
+  // ===== Carga inicial por defecto =====
+  (async()=>{
+    const localRadio = document.querySelector('input[name="source"][value="local"]');
+    if(localRadio) localRadio.checked = true;
+
+    const isFile = location.protocol === 'file:';
+
+    try{
+      const turl = (el('#treeUrl').value || DEFAULT_TREE_URL).trim();
+      if(!isFile){
+        const autoTree = await fetch(turl, { cache: 'no-store' });
+        if(autoTree.ok){ state.tree = await autoTree.json(); setStatus('Estructura: OK'); buildUI(); } else setStatus('Estructura: —');
+      } else {
+        setStatus('Estructura: — (abriste el HTML con file://; cargá el árbol con el botón o serví un server local)');
+      }
+    }catch{ setStatus('Estructura: —'); }
+
+    try{
+      const rurl = (respUrlInput?.value || DEFAULT_LOCAL_URL).trim();
+      if(!isFile){
+        const autoResp = await fetch(rurl, { cache: 'no-store' });
+        if(autoResp.ok){ state.localData = await autoResp.json(); }
+      }
+    }catch{}
+
+    try{ if(state.tree) runQuery(); }catch{}
+  })();
+})();
+</script>
+</body>
+</html>

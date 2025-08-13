@@ -1,0 +1,1250 @@
+{
+  "versionApiKcdb": "1.0.9",
+  "pageNumber": 0,
+  "pageSize": 20,
+  "numberOfElements": 20,
+  "totalElements": 86,
+  "totalPages": 5,
+  "data": [
+    {
+      "id": 9551,
+      "status": "Published",
+      "statusDate": "2007-03-29",
+      "kcdbCode": "SIM-EM-US-000007DB-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "United States",
+      "nmiCode": "NIST",
+      "nmiName": "National Institute of Standards and Technology",
+      "nmiServiceCode": "NIST/53200S",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage: sources",
+      "cmc": {
+        "lowerLimit": 0.1,
+        "upperLimit": 0.1,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 1000.0,
+        "upperLimit": 1000.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "",
+        "tableRows": 0,
+        "tableCols": 0,
+        "tableComment": "",
+        "tableContents": "<masked>"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "Uncertainty expressed relative to the international value of <em>K</em><SUB>J-90</SUB>, not the SI volt",
+      "groupIdentifier": null,
+      "publicationDate": "2007-03-29",
+      "approvalDate": "2007-03-29",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Calibrators",
+      "instrumentMethod": "Comparison with artefact calibration",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "1 MHz"
+        },
+        {
+          "parameterName": "Ambient temperature",
+          "parameterValue": "23.0 °C ± 1.5 °C"
+        },
+        {
+          "parameterName": "Relative humidity",
+          "parameterValue": "&lt;= 55 %"
+        }
+      ]
+    },
+    {
+      "id": 9552,
+      "status": "Published",
+      "statusDate": "2007-03-29",
+      "kcdbCode": "SIM-EM-US-000007DC-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "United States",
+      "nmiCode": "NIST",
+      "nmiName": "National Institute of Standards and Technology",
+      "nmiServiceCode": "NIST/53200S",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage: sources",
+      "cmc": {
+        "lowerLimit": 1.0,
+        "upperLimit": 1.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 20.0,
+        "upperLimit": 20.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "",
+        "tableRows": 0,
+        "tableCols": 0,
+        "tableComment": "",
+        "tableContents": "<masked>"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "Uncertainty expressed relative to the international value of <em>K</em><SUB>J-90</SUB>, not the SI volt",
+      "groupIdentifier": null,
+      "publicationDate": "2007-03-29",
+      "approvalDate": "2007-03-29",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Calibrators",
+      "instrumentMethod": "Comparison with artefact calibration",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "300 Hz"
+        },
+        {
+          "parameterName": "Ambient temperature",
+          "parameterValue": "23.0 °C ± 1.5 °C"
+        },
+        {
+          "parameterName": "Relative humidity",
+          "parameterValue": "&lt;= 55 %"
+        }
+      ]
+    },
+    {
+      "id": 9558,
+      "status": "Published",
+      "statusDate": "2007-03-29",
+      "kcdbCode": "SIM-EM-US-000007DI-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "United States",
+      "nmiCode": "NIST",
+      "nmiName": "National Institute of Standards and Technology",
+      "nmiServiceCode": "NIST/53200S",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage: sources",
+      "cmc": {
+        "lowerLimit": 10.0,
+        "upperLimit": 10.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 20.0,
+        "upperLimit": 20.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "",
+        "tableRows": 0,
+        "tableCols": 0,
+        "tableComment": "",
+        "tableContents": "<masked>"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "Uncertainty expressed relative to the international value of <em>K</em><SUB>J-90</SUB>, not the SI volt",
+      "groupIdentifier": null,
+      "publicationDate": "2007-03-29",
+      "approvalDate": "2007-03-29",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Calibrators",
+      "instrumentMethod": "Comparison with artefact calibration",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "1 MHz"
+        },
+        {
+          "parameterName": "Ambient temperature",
+          "parameterValue": "23.0 °C ± 1.5 °C"
+        },
+        {
+          "parameterName": "Relative humidity",
+          "parameterValue": "&lt;= 55 %"
+        }
+      ]
+    },
+    {
+      "id": 9559,
+      "status": "Published",
+      "statusDate": "2007-03-29",
+      "kcdbCode": "SIM-EM-US-000007DJ-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "United States",
+      "nmiCode": "NIST",
+      "nmiName": "National Institute of Standards and Technology",
+      "nmiServiceCode": "NIST/53200S",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage: sources",
+      "cmc": {
+        "lowerLimit": 100.0,
+        "upperLimit": 100.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 20.0,
+        "upperLimit": 20.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "",
+        "tableRows": 0,
+        "tableCols": 0,
+        "tableComment": "",
+        "tableContents": "<masked>"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "Uncertainty expressed relative to the international value of <em>K</em><SUB>J-90</SUB>, not the SI volt",
+      "groupIdentifier": null,
+      "publicationDate": "2007-03-29",
+      "approvalDate": "2007-03-29",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Calibrators",
+      "instrumentMethod": "Comparison with artefact calibration",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "55 Hz"
+        },
+        {
+          "parameterName": "Ambient temperature",
+          "parameterValue": "23.0 °C ± 1.5 °C"
+        },
+        {
+          "parameterName": "Relative humidity",
+          "parameterValue": "&lt;= 55 %"
+        }
+      ]
+    },
+    {
+      "id": 9561,
+      "status": "Published",
+      "statusDate": "2007-03-29",
+      "kcdbCode": "SIM-EM-US-000007DL-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "United States",
+      "nmiCode": "NIST",
+      "nmiName": "National Institute of Standards and Technology",
+      "nmiServiceCode": "NIST/53200S",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage: sources",
+      "cmc": {
+        "lowerLimit": 100.0,
+        "upperLimit": 100.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 500.0,
+        "upperLimit": 500.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "",
+        "tableRows": 0,
+        "tableCols": 0,
+        "tableComment": "",
+        "tableContents": "<masked>"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "Uncertainty expressed relative to the international value of <em>K</em><SUB>J-90</SUB>, not the SI volt",
+      "groupIdentifier": null,
+      "publicationDate": "2007-03-29",
+      "approvalDate": "2007-03-29",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Calibrators",
+      "instrumentMethod": "Comparison with artefact calibration",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "100 kHz"
+        },
+        {
+          "parameterName": "Ambient temperature",
+          "parameterValue": "23.0 °C ± 1.5 °C"
+        },
+        {
+          "parameterName": "Relative humidity",
+          "parameterValue": "&lt;= 55 %"
+        }
+      ]
+    },
+    {
+      "id": 10453,
+      "status": "Published",
+      "statusDate": "2014-11-10",
+      "kcdbCode": "APMP-EM-MY-0000082D-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "APMP",
+      "countryValue": "Malaysia",
+      "nmiCode": "NMIM",
+      "nmiName": "National Metrology Institute of Malaysia",
+      "nmiServiceCode": "NMIM/5.2.1",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage up to 1000 V: sources",
+      "cmc": {
+        "lowerLimit": 0.5,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 7.0,
+        "upperLimit": 53.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-365",
+        "tableRows": 19,
+        "tableCols": 19,
+        "tableComment": "The expanded uncertainties given in this table are expressed in µV/V",
+        "tableContents": "{\"row_1\":{\"col_1\":\"\",\"col_2\":\"10 Hz\",\"col_3\":\"20 Hz\",\"col_4\":\"30 Hz\",\"col_5\":\"40 Hz\",\"col_6\":\"57 Hz\",\"col_7\":\"100 Hz\",\"col_8\":\"400 Hz\",\"col_9\":\"1 kHz\",\"col_10\":\"5 kHz\",\"col_11\":\"10 kHz\",\"col_12\":\"20 kHz\",\"col_13\":\"30 kHz\",\"col_14\":\"50 kHz\",\"col_15\":\"100 kHz\",\"col_16\":\"200 kHz\",\"col_17\":\"300 kHz\",\"col_18\":\"500 kHz\",\"col_19\":\"1 MHz\"},\"row_2\":{\"col_1\":\"1 V\",\"col_2\":\"18\",\"col_3\":\"12\",\"col_4\":\"10\",\"col_5\":\"10\",\"col_6\":\"13\",\"col_7\":\"10\",\"col_8\":\"10\",\"col_9\":\"9\",\"col_10\":\"9\",\"col_11\":\"9\",\"col_12\":\"11\",\"col_13\":\"13\",\"col_14\":\"23\",\"col_15\":\"37\",\"col_16\":\"27\",\"col_17\":\"28\",\"col_18\":\"38\",\"col_19\":\"49\"},\"row_3\":{\"col_1\":\"2 V\",\"col_2\":\"17\",\"col_3\":\"12\",\"col_4\":\"10\",\"col_5\":\"9\",\"col_6\":\"9\",\"col_7\":\"10\",\"col_8\":\"9\",\"col_9\":\"7\",\"col_10\":\"9\",\"col_11\":\"11\",\"col_12\":\"10\",\"col_13\":\"8\",\"col_14\":\"11\",\"col_15\":\"14\",\"col_16\":\"14\",\"col_17\":\"18\",\"col_18\":\"22\",\"col_19\":\"32\"},\"row_4\":{\"col_1\":\"3 V\",\"col_2\":\"15\",\"col_3\":\"9\",\"col_4\":\"12\",\"col_5\":\"8\",\"col_6\":\"10\",\"col_7\":\"11\",\"col_8\":\"11\",\"col_9\":\"8\",\"col_10\":\"8\",\"col_11\":\"14\",\"col_12\":\"18\",\"col_13\":\"16\",\"col_14\":\"23\",\"col_15\":\"23\",\"col_16\":\"22\",\"col_17\":\"23\",\"col_18\":\"27\",\"col_19\":\"38\"},\"row_5\":{\"col_1\":\"4 V\",\"col_2\":\"18\",\"col_3\":\"14\",\"col_4\":\"13\",\"col_5\":\"12\",\"col_6\":\"18\",\"col_7\":\"13\",\"col_8\":\"11\",\"col_9\":\"10\",\"col_10\":\"11\",\"col_11\":\"12\",\"col_12\":\"10\",\"col_13\":\"12\",\"col_14\":\"13\",\"col_15\":\"16\",\"col_16\":\"19\",\"col_17\":\"21\",\"col_18\":\"25\",\"col_19\":\"39\"},\"row_6\":{\"col_1\":\"6 V\",\"col_2\":\"18\",\"col_3\":\"12\",\"col_4\":\"13\",\"col_5\":\"13\",\"col_6\":\"12\",\"col_7\":\"13\",\"col_8\":\"12\",\"col_9\":\"11\",\"col_10\":\"14\",\"col_11\":\"12\",\"col_12\":\"13\",\"col_13\":\"13\",\"col_14\":\"14\",\"col_15\":\"15\",\"col_16\":\"19\",\"col_17\":\"24\",\"col_18\":\"32\",\"col_19\":\"51\"},\"row_7\":{\"col_1\":\"10 V\",\"col_2\":\"21\",\"col_3\":\"22\",\"col_4\":\"19\",\"col_5\":\"19\",\"col_6\":\"19\",\"col_7\":\"16\",\"col_8\":\"17\",\"col_9\":\"18\",\"col_10\":\"20\",\"col_11\":\"21\",\"col_12\":\"22\",\"col_13\":\"17\",\"col_14\":\"24\",\"col_15\":\"22\",\"col_16\":\"24\",\"col_17\":\"30\",\"col_18\":\"34\",\"col_19\":\"53\"},\"row_8\":{\"col_1\":\"12 V\",\"col_2\":\"16\",\"col_3\":\"13\",\"col_4\":\"12\",\"col_5\":\"12\",\"col_6\":\"11\",\"col_7\":\"13\",\"col_8\":\"12\",\"col_9\":\"12\",\"col_10\":\"11\",\"col_11\":\"12\",\"col_12\":\"13\",\"col_13\":\"13\",\"col_14\":\"14\",\"col_15\":\"16\",\"col_16\":\"20\",\"col_17\":\"26\",\"col_18\":\"34\",\"col_19\":\"-\"},\"row_9\":{\"col_1\":\"20 V\",\"col_2\":\"19\",\"col_3\":\"14\",\"col_4\":\"12\",\"col_5\":\"14\",\"col_6\":\"12\",\"col_7\":\"12\",\"col_8\":\"11\",\"col_9\":\"12\",\"col_10\":\"15\",\"col_11\":\"13\",\"col_12\":\"12\",\"col_13\":\"13\",\"col_14\":\"14\",\"col_15\":\"18\",\"col_16\":\"25\",\"col_17\":\"30\",\"col_18\":\"39\",\"col_19\":\"-\"},\"row_10\":{\"col_1\":\"30 V\",\"col_2\":\"25\",\"col_3\":\"19\",\"col_4\":\"17\",\"col_5\":\"13\",\"col_6\":\"17\",\"col_7\":\"18\",\"col_8\":\"16\",\"col_9\":\"14\",\"col_10\":\"13\",\"col_11\":\"13\",\"col_12\":\"13\",\"col_13\":\"14\",\"col_14\":\"25\",\"col_15\":\"24\",\"col_16\":\"29\",\"col_17\":\"36\",\"col_18\":\"-\",\"col_19\":\"-\"},\"row_11\":{\"col_1\":\"40 V\",\"col_2\":\"19\",\"col_3\":\"13\",\"col_4\":\"14\",\"col_5\":\"13\",\"col_6\":\"13\",\"col_7\":\"14\",\"col_8\":\"13\",\"col_9\":\"13\",\"col_10\":\"14\",\"col_11\":\"14\",\"col_12\":\"14\",\"col_13\":\"15\",\"col_14\":\"14\",\"col_15\":\"21\",\"col_16\":\"27\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\"},\"row_12\":{\"col_1\":\"60 V\",\"col_2\":\"19\",\"col_3\":\"15\",\"col_4\":\"15\",\"col_5\":\"14\",\"col_6\":\"15\",\"col_7\":\"15\",\"col_8\":\"14\",\"col_9\":\"14\",\"col_10\":\"16\",\"col_11\":\"15\",\"col_12\":\"14\",\"col_13\":\"17\",\"col_14\":\"17\",\"col_15\":\"21\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\"},\"row_13\":{\"col_1\":\"100 V\",\"col_2\":\"21\",\"col_3\":\"25\",\"col_4\":\"18\",\"col_5\":\"21\",\"col_6\":\"18\",\"col_7\":\"20\",\"col_8\":\"20\",\"col_9\":\"16\",\"col_10\":\"23\",\"col_11\":\"21\",\"col_12\":\"19\",\"col_13\":\"19\",\"col_14\":\"20\",\"col_15\":\"28\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\"},\"row_14\":{\"col_1\":\"120 V\",\"col_2\":\"17\",\"col_3\":\"13\",\"col_4\":\"13\",\"col_5\":\"13\",\"col_6\":\"13\",\"col_7\":\"12\",\"col_8\":\"13\",\"col_9\":\"13\",\"col_10\":\"13\",\"col_11\":\"12\",\"col_12\":\"15\",\"col_13\":\"13\",\"col_14\":\"16\",\"col_15\":\"21\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\"},\"row_15\":{\"col_1\":\"200 V\",\"col_2\":\"17\",\"col_3\":\"13\",\"col_4\":\"13\",\"col_5\":\"12\",\"col_6\":\"12\",\"col_7\":\"12\",\"col_8\":\"12\",\"col_9\":\"12\",\"col_10\":\"13\",\"col_11\":\"13\",\"col_12\":\"13\",\"col_13\":\"14\",\"col_14\":\"17\",\"col_15\":\"24\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\"},\"row_16\":{\"col_1\":\"300 V\",\"col_2\":\"-\",\"col_3\":\"-\",\"col_4\":\"-\",\"col_5\":\"14\",\"col_6\":\"14\",\"col_7\":\"18\",\"col_8\":\"14\",\"col_9\":\"15\",\"col_10\":\"14\",\"col_11\":\"14\",\"col_12\":\"15\",\"col_13\":\"16\",\"col_14\":\"-\",\"col_15\":\"-\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\"},\"row_17\":{\"col_1\":\"400 V\",\"col_2\":\"-\",\"col_3\":\"-\",\"col_4\":\"-\",\"col_5\":\"15\",\"col_6\":\"14\",\"col_7\":\"14\",\"col_8\":\"14\",\"col_9\":\"14\",\"col_10\":\"14\",\"col_11\":\"14\",\"col_12\":\"15\",\"col_13\":\"17\",\"col_14\":\"-\",\"col_15\":\"-\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\"},\"row_18\":{\"col_1\":\"600 V\",\"col_2\":\"-\",\"col_3\":\"-\",\"col_4\":\"-\",\"col_5\":\"16\",\"col_6\":\"16\",\"col_7\":\"16\",\"col_8\":\"16\",\"col_9\":\"16\",\"col_10\":\"17\",\"col_11\":\"17\",\"col_12\":\"19\",\"col_13\":\"22\",\"col_14\":\"-\",\"col_15\":\"-\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\"},\"row_19\":{\"col_1\":\"1000 V\",\"col_2\":\"-\",\"col_3\":\"-\",\"col_4\":\"-\",\"col_5\":\"17\",\"col_6\":\"18\",\"col_7\":\"17\",\"col_8\":\"17\",\"col_9\":\"18\",\"col_10\":\"19\",\"col_11\":\"19\",\"col_12\":\"20\",\"col_13\":\"26\",\"col_14\":\"-\",\"col_15\":\"-\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "",
+      "groupIdentifier": null,
+      "publicationDate": "2014-11-10",
+      "approvalDate": "2014-11-10",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "AC/DC transfer",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 10736,
+      "status": "Published",
+      "statusDate": "2014-11-10",
+      "kcdbCode": "APMP-EM-CN-000008A8-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "APMP",
+      "countryValue": "China",
+      "nmiCode": "NIM",
+      "nmiName": "National Institute of Metrology",
+      "nmiServiceCode": "NIM/5.2.1a",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage up to 1100 V: sources",
+      "cmc": {
+        "lowerLimit": 0.01,
+        "upperLimit": 0.5,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 15.0,
+        "upperLimit": 400.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-510",
+        "tableRows": 22,
+        "tableCols": 10,
+        "tableComment": "The expanded uncertainties given in this table are expressed in µV/V",
+        "tableContents": "{\"row_1\":{\"col_1\":\"\",\"col_2\":\"10 Hz\",\"col_3\":\"60 Hz\",\"col_4\":\"1 kHz\",\"col_5\":\"10 kHz\",\"col_6\":\"20 kHz\",\"col_7\":\"50 kHz\",\"col_8\":\"100 kHz\",\"col_9\":\"500 kHz\",\"col_10\":\"1 MHz\"},\"row_2\":{\"col_1\":\"10 mV\",\"col_2\":\"-\",\"col_3\":\"100\",\"col_4\":\"100\",\"col_5\":\"100\",\"col_6\":\"100\",\"col_7\":\"120\",\"col_8\":\"150\",\"col_9\":\"250\",\"col_10\":\"400\"},\"row_3\":{\"col_1\":\"20 mV\",\"col_2\":\"-\",\"col_3\":\"80\",\"col_4\":\"80\",\"col_5\":\"80\",\"col_6\":\"80\",\"col_7\":\"100\",\"col_8\":\"120\",\"col_9\":\"200\",\"col_10\":\"350\"},\"row_4\":{\"col_1\":\"30 mV\",\"col_2\":\"-\",\"col_3\":\"60\",\"col_4\":\"60\",\"col_5\":\"60\",\"col_6\":\"60\",\"col_7\":\"80\",\"col_8\":\"100\",\"col_9\":\"180\",\"col_10\":\"300\"},\"row_5\":{\"col_1\":\"50 mV\",\"col_2\":\"-\",\"col_3\":\"40\",\"col_4\":\"40\",\"col_5\":\"40\",\"col_6\":\"40\",\"col_7\":\"60\",\"col_8\":\"70\",\"col_9\":\"150\",\"col_10\":\"250\"},\"row_6\":{\"col_1\":\"100 mV\",\"col_2\":\"-\",\"col_3\":\"30\",\"col_4\":\"30\",\"col_5\":\"30\",\"col_6\":\"30\",\"col_7\":\"35\",\"col_8\":\"40\",\"col_9\":\"120\",\"col_10\":\"200\"},\"row_7\":{\"col_1\":\"200 mV\",\"col_2\":\"-\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"25\",\"col_6\":\"25\",\"col_7\":\"25\",\"col_8\":\"35\",\"col_9\":\"100\",\"col_10\":\"180\"},\"row_8\":{\"col_1\":\"300 mV\",\"col_2\":\"-\",\"col_3\":\"20\",\"col_4\":\"20\",\"col_5\":\"20\",\"col_6\":\"20\",\"col_7\":\"20\",\"col_8\":\"30\",\"col_9\":\"80\",\"col_10\":\"150\"},\"row_9\":{\"col_1\":\"500 mV\",\"col_2\":\"20\",\"col_3\":\"15\",\"col_4\":\"15\",\"col_5\":\"15\",\"col_6\":\"18\",\"col_7\":\"21\",\"col_8\":\"24\",\"col_9\":\"60\",\"col_10\":\"120\"},\"row_10\":{\"col_1\":\"1 V\",\"col_2\":\"16\",\"col_3\":\"9\",\"col_4\":\"6\",\"col_5\":\"6\",\"col_6\":\"9\",\"col_7\":\"10\",\"col_8\":\"10\",\"col_9\":\"45\",\"col_10\":\"105\"},\"row_11\":{\"col_1\":\"2 V\",\"col_2\":\"26\",\"col_3\":\"12\",\"col_4\":\"6\",\"col_5\":\"6\",\"col_6\":\"9\",\"col_7\":\"10\",\"col_8\":\"12\",\"col_9\":\"51\",\"col_10\":\"111\"},\"row_12\":{\"col_1\":\"3 V\",\"col_2\":\"30\",\"col_3\":\"15\",\"col_4\":\"6\",\"col_5\":\"6\",\"col_6\":\"9\",\"col_7\":\"12\",\"col_8\":\"16\",\"col_9\":\"60\",\"col_10\":\"120\"},\"row_13\":{\"col_1\":\"5 V\",\"col_2\":\"34\",\"col_3\":\"16\",\"col_4\":\"9\",\"col_5\":\"9\",\"col_6\":\"12\",\"col_7\":\"14\",\"col_8\":\"18\",\"col_9\":\"75\",\"col_10\":\"129\"},\"row_14\":{\"col_1\":\"10 V\",\"col_2\":\"38\",\"col_3\":\"17\",\"col_4\":\"10\",\"col_5\":\"10\",\"col_6\":\"13\",\"col_7\":\"16\",\"col_8\":\"20\",\"col_9\":\"84\",\"col_10\":\"138\"},\"row_15\":{\"col_1\":\"20 V\",\"col_2\":\"44\",\"col_3\":\"18\",\"col_4\":\"11\",\"col_5\":\"11\",\"col_6\":\"13\",\"col_7\":\"18\",\"col_8\":\"22\",\"col_9\":\"93\",\"col_10\":\"144\"},\"row_16\":{\"col_1\":\"30 V\",\"col_2\":\"43\",\"col_3\":\"20\",\"col_4\":\"14\",\"col_5\":\"14\",\"col_6\":\"14\",\"col_7\":\"20\",\"col_8\":\"25\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_17\":{\"col_1\":\"50 V\",\"col_2\":\"52\",\"col_3\":\"24\",\"col_4\":\"15\",\"col_5\":\"15\",\"col_6\":\"15\",\"col_7\":\"24\",\"col_8\":\"28\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_18\":{\"col_1\":\"100 V\",\"col_2\":\"56\",\"col_3\":\"26\",\"col_4\":\"18\",\"col_5\":\"18\",\"col_6\":\"18\",\"col_7\":\"28\",\"col_8\":\"32\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_19\":{\"col_1\":\"200 V\",\"col_2\":\"60\",\"col_3\":\"29\",\"col_4\":\"22\",\"col_5\":\"22\",\"col_6\":\"22\",\"col_7\":\"33\",\"col_8\":\"36\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_20\":{\"col_1\":\"300 V\",\"col_2\":\"64\",\"col_3\":\"33\",\"col_4\":\"26\",\"col_5\":\"26\",\"col_6\":\"26\",\"col_7\":\"42\",\"col_8\":\"45\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_21\":{\"col_1\":\"500 V\",\"col_2\":\"-\",\"col_3\":\"39\",\"col_4\":\"32\",\"col_5\":\"32\",\"col_6\":\"35\",\"col_7\":\"48\",\"col_8\":\"66\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_22\":{\"col_1\":\"1000 V\",\"col_2\":\"-\",\"col_3\":\"45\",\"col_4\":\"41\",\"col_5\":\"41\",\"col_6\":\"48\",\"col_7\":\"75\",\"col_8\":\"99\",\"col_9\":\"-\",\"col_10\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "",
+      "groupIdentifier": null,
+      "publicationDate": "2014-11-10",
+      "approvalDate": "2014-11-10",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "Comparison",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "60 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 10737,
+      "status": "Published",
+      "statusDate": "2014-11-10",
+      "kcdbCode": "APMP-EM-CN-000008A9-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "APMP",
+      "countryValue": "China",
+      "nmiCode": "NIM",
+      "nmiName": "National Institute of Metrology",
+      "nmiServiceCode": "NIM/5.2.1b",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage up to 1100 V: sources",
+      "cmc": {
+        "lowerLimit": 0.5,
+        "upperLimit": 1.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 6.0,
+        "upperLimit": 120.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-511",
+        "tableRows": 22,
+        "tableCols": 10,
+        "tableComment": "Relative expanded uncertainty / (µF/F)",
+        "tableContents": "{\"row_1\":{\"col_1\":\"\",\"col_2\":\"10 Hz\",\"col_3\":\"60 Hz\",\"col_4\":\"1 kHz\",\"col_5\":\"10 kHz\",\"col_6\":\"20 kHz\",\"col_7\":\"50 kHz\",\"col_8\":\"100 kHz\",\"col_9\":\"500 kHz\",\"col_10\":\"1 MHz\"},\"row_2\":{\"col_1\":\"10 mV\",\"col_2\":\"-\",\"col_3\":\"100\",\"col_4\":\"100\",\"col_5\":\"100\",\"col_6\":\"100\",\"col_7\":\"120\",\"col_8\":\"150\",\"col_9\":\"250\",\"col_10\":\"400\"},\"row_3\":{\"col_1\":\"20 mV\",\"col_2\":\"-\",\"col_3\":\"80\",\"col_4\":\"80\",\"col_5\":\"80\",\"col_6\":\"80\",\"col_7\":\"100\",\"col_8\":\"120\",\"col_9\":\"200\",\"col_10\":\"350\"},\"row_4\":{\"col_1\":\"30 mV\",\"col_2\":\"-\",\"col_3\":\"60\",\"col_4\":\"60\",\"col_5\":\"60\",\"col_6\":\"60\",\"col_7\":\"80\",\"col_8\":\"100\",\"col_9\":\"180\",\"col_10\":\"300\"},\"row_5\":{\"col_1\":\"50 mV\",\"col_2\":\"-\",\"col_3\":\"40\",\"col_4\":\"40\",\"col_5\":\"40\",\"col_6\":\"40\",\"col_7\":\"60\",\"col_8\":\"70\",\"col_9\":\"150\",\"col_10\":\"250\"},\"row_6\":{\"col_1\":\"100 mV\",\"col_2\":\"-\",\"col_3\":\"30\",\"col_4\":\"30\",\"col_5\":\"30\",\"col_6\":\"30\",\"col_7\":\"35\",\"col_8\":\"40\",\"col_9\":\"120\",\"col_10\":\"200\"},\"row_7\":{\"col_1\":\"200 mV\",\"col_2\":\"-\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"25\",\"col_6\":\"25\",\"col_7\":\"25\",\"col_8\":\"35\",\"col_9\":\"100\",\"col_10\":\"180\"},\"row_8\":{\"col_1\":\"300 mV\",\"col_2\":\"-\",\"col_3\":\"20\",\"col_4\":\"20\",\"col_5\":\"20\",\"col_6\":\"20\",\"col_7\":\"20\",\"col_8\":\"30\",\"col_9\":\"80\",\"col_10\":\"150\"},\"row_9\":{\"col_1\":\"500 mV\",\"col_2\":\"20\",\"col_3\":\"15\",\"col_4\":\"15\",\"col_5\":\"15\",\"col_6\":\"18\",\"col_7\":\"21\",\"col_8\":\"24\",\"col_9\":\"60\",\"col_10\":\"120\"},\"row_10\":{\"col_1\":\"1 V\",\"col_2\":\"16\",\"col_3\":\"9\",\"col_4\":\"6\",\"col_5\":\"6\",\"col_6\":\"9\",\"col_7\":\"10\",\"col_8\":\"10\",\"col_9\":\"45\",\"col_10\":\"105\"},\"row_11\":{\"col_1\":\"2 V\",\"col_2\":\"26\",\"col_3\":\"12\",\"col_4\":\"6\",\"col_5\":\"6\",\"col_6\":\"9\",\"col_7\":\"10\",\"col_8\":\"12\",\"col_9\":\"51\",\"col_10\":\"111\"},\"row_12\":{\"col_1\":\"3 V\",\"col_2\":\"30\",\"col_3\":\"15\",\"col_4\":\"6\",\"col_5\":\"6\",\"col_6\":\"9\",\"col_7\":\"12\",\"col_8\":\"16\",\"col_9\":\"60\",\"col_10\":\"120\"},\"row_13\":{\"col_1\":\"5 V\",\"col_2\":\"34\",\"col_3\":\"16\",\"col_4\":\"9\",\"col_5\":\"9\",\"col_6\":\"12\",\"col_7\":\"14\",\"col_8\":\"18\",\"col_9\":\"75\",\"col_10\":\"129\"},\"row_14\":{\"col_1\":\"10 V\",\"col_2\":\"38\",\"col_3\":\"17\",\"col_4\":\"10\",\"col_5\":\"10\",\"col_6\":\"13\",\"col_7\":\"16\",\"col_8\":\"20\",\"col_9\":\"84\",\"col_10\":\"138\"},\"row_15\":{\"col_1\":\"20 V\",\"col_2\":\"44\",\"col_3\":\"18\",\"col_4\":\"11\",\"col_5\":\"11\",\"col_6\":\"13\",\"col_7\":\"18\",\"col_8\":\"22\",\"col_9\":\"93\",\"col_10\":\"144\"},\"row_16\":{\"col_1\":\"30 V\",\"col_2\":\"43\",\"col_3\":\"20\",\"col_4\":\"14\",\"col_5\":\"14\",\"col_6\":\"14\",\"col_7\":\"20\",\"col_8\":\"25\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_17\":{\"col_1\":\"50 V\",\"col_2\":\"52\",\"col_3\":\"24\",\"col_4\":\"15\",\"col_5\":\"15\",\"col_6\":\"15\",\"col_7\":\"24\",\"col_8\":\"28\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_18\":{\"col_1\":\"100 V\",\"col_2\":\"56\",\"col_3\":\"26\",\"col_4\":\"18\",\"col_5\":\"18\",\"col_6\":\"18\",\"col_7\":\"28\",\"col_8\":\"32\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_19\":{\"col_1\":\"200 V\",\"col_2\":\"60\",\"col_3\":\"29\",\"col_4\":\"22\",\"col_5\":\"22\",\"col_6\":\"22\",\"col_7\":\"33\",\"col_8\":\"36\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_20\":{\"col_1\":\"300 V\",\"col_2\":\"64\",\"col_3\":\"33\",\"col_4\":\"26\",\"col_5\":\"26\",\"col_6\":\"26\",\"col_7\":\"42\",\"col_8\":\"45\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_21\":{\"col_1\":\"500 V\",\"col_2\":\"-\",\"col_3\":\"39\",\"col_4\":\"32\",\"col_5\":\"32\",\"col_6\":\"35\",\"col_7\":\"48\",\"col_8\":\"66\",\"col_9\":\"-\",\"col_10\":\"-\"},\"row_22\":{\"col_1\":\"1000 V\",\"col_2\":\"-\",\"col_3\":\"45\",\"col_4\":\"41\",\"col_5\":\"41\",\"col_6\":\"48\",\"col_7\":\"75\",\"col_8\":\"99\",\"col_9\":\"-\",\"col_10\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "",
+      "groupIdentifier": null,
+      "publicationDate": "2014-11-10",
+      "approvalDate": "2014-11-10",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "Comparison",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 18031,
+      "status": "Published",
+      "statusDate": "2015-01-06",
+      "kcdbCode": "EURAMET-EM-CZ-00000DWV-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "EURAMET",
+      "countryValue": "Czechia",
+      "nmiCode": "CMI",
+      "nmiName": "Czech Metrology Institute",
+      "nmiServiceCode": "ACV04",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage up to 1000 V: sources",
+      "cmc": {
+        "lowerLimit": 0.001,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 12.0,
+        "upperLimit": 600.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-1067",
+        "tableRows": 9,
+        "tableCols": 12,
+        "tableComment": "The expanded uncertainties given in this table are expressed in µV/V",
+        "tableContents": "{\"row_1\":{\"col_1\":\"\",\"col_2\":\"10 Hz to 20 Hz\",\"col_3\":\"20 Hz to 30 Hz\",\"col_4\":\"30 Hz to 300 Hz\",\"col_5\":\"300 Hz to 1 kHz\",\"col_6\":\"1 kHz to 10 kHz\",\"col_7\":\"10 kHz to 30 kHz\",\"col_8\":\"30 kHz to 50 kHz\",\"col_9\":\"50 kHz to 100 kHz\",\"col_10\":\"100 kHz to 300 kHz\",\"col_11\":\"300 kHz to 500 kHz\",\"col_12\":\"500 kHz to 1 MHz\"},\"row_2\":{\"col_1\":\"1 mV to 2 mV\",\"col_2\":\"240\",\"col_3\":\"220\",\"col_4\":\"210\",\"col_5\":\"200\",\"col_6\":\"200\",\"col_7\":\"210\",\"col_8\":\"220\",\"col_9\":\"240\",\"col_10\":\"300\",\"col_11\":\"400\",\"col_12\":\"600\"},\"row_3\":{\"col_1\":\"2 mV to 20 mV\",\"col_2\":\"110\",\"col_3\":\"100\",\"col_4\":\"95\",\"col_5\":\"90\",\"col_6\":\"95\",\"col_7\":\"100\",\"col_8\":\"110\",\"col_9\":\"120\",\"col_10\":\"180\",\"col_11\":\"240\",\"col_12\":\"500\"},\"row_4\":{\"col_1\":\"20 mV to 200 mV\",\"col_2\":\"70\",\"col_3\":\"60\",\"col_4\":\"55\",\"col_5\":\"50\",\"col_6\":\"50\",\"col_7\":\"55\",\"col_8\":\"60\",\"col_9\":\"80\",\"col_10\":\"100\",\"col_11\":\"200\",\"col_12\":\"420\"},\"row_5\":{\"col_1\":\"0.2 V to 2 V\",\"col_2\":\"25\",\"col_3\":\"20\",\"col_4\":\"20\",\"col_5\":\"12\",\"col_6\":\"12\",\"col_7\":\"15\",\"col_8\":\"20\",\"col_9\":\"25\",\"col_10\":\"40\",\"col_11\":\"90\",\"col_12\":\"300\"},\"row_6\":{\"col_1\":\"2 V to 20 V\",\"col_2\":\"30\",\"col_3\":\"20\",\"col_4\":\"20\",\"col_5\":\"15\",\"col_6\":\"15\",\"col_7\":\"18\",\"col_8\":\"23\",\"col_9\":\"26\",\"col_10\":\"50\",\"col_11\":\"100\",\"col_12\":\"320\"},\"row_7\":{\"col_1\":\"20 V to 200 V\",\"col_2\":\"45\",\"col_3\":\"40\",\"col_4\":\"35\",\"col_5\":\"25\",\"col_6\":\"25\",\"col_7\":\"25\",\"col_8\":\"30\",\"col_9\":\"50\",\"col_10\":\"-\",\"col_11\":\"-\",\"col_12\":\"-\"},\"row_8\":{\"col_1\":\"200 V to 700 V\",\"col_2\":\"-\",\"col_3\":\"-\",\"col_4\":\"60\",\"col_5\":\"45\",\"col_6\":\"50\",\"col_7\":\"60\",\"col_8\":\"60\",\"col_9\":\"100\",\"col_10\":\"-\",\"col_11\":\"-\",\"col_12\":\"-\"},\"row_9\":{\"col_1\":\"700 V to 1000 V\",\"col_2\":\"-\",\"col_3\":\"-\",\"col_4\":\"60\",\"col_5\":\"45\",\"col_6\":\"50\",\"col_7\":\"60\",\"col_8\":\"-\",\"col_9\":\"-\",\"col_10\":\"-\",\"col_11\":\"-\",\"col_12\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "",
+      "groupIdentifier": null,
+      "publicationDate": "2015-01-06",
+      "approvalDate": "2015-01-06",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "AC voltage source, multifunction calibrator",
+      "instrumentMethod": "AC/DC transfer",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 18250,
+      "status": "Published",
+      "statusDate": "2013-08-06",
+      "kcdbCode": "EURAMET-EM-DK-00000E2Y-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "EURAMET",
+      "countryValue": "Denmark",
+      "nmiCode": "Trescal",
+      "nmiName": "Trescal Ltd",
+      "nmiServiceCode": null,
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage up to 1000 V: sources",
+      "cmc": {
+        "lowerLimit": 0.001,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 5.0,
+        "upperLimit": 700.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-1162",
+        "tableRows": 22,
+        "tableCols": 14,
+        "tableComment": "The expanded uncertainties in this table are expressed in µV/V",
+        "tableContents": "{\"row_1\":{\"col_1\":\"\",\"col_2\":\"10 Hz\",\"col_3\":\"20 Hz\",\"col_4\":\"40 Hz\",\"col_5\":\"500 Hz\",\"col_6\":\"1 kHz\",\"col_7\":\"10 kHz\",\"col_8\":\"50 kHz\",\"col_9\":\"70 kHz\",\"col_10\":\"100 kHz\",\"col_11\":\"200 kHz\",\"col_12\":\"500 kHz\",\"col_13\":\"700 kHz\",\"col_14\":\"1 MHz\"},\"row_2\":{\"col_1\":\"1 mV\",\"col_2\":\"300\",\"col_3\":\"280\",\"col_4\":\"280\",\"col_5\":\"280\",\"col_6\":\"280\",\"col_7\":\"280\",\"col_8\":\"290\",\"col_9\":\"350\",\"col_10\":\"400\",\"col_11\":\"450\",\"col_12\":\"500\",\"col_13\":\"600\",\"col_14\":\"700\"},\"row_3\":{\"col_1\":\"2 mV\",\"col_2\":\"180\",\"col_3\":\"160\",\"col_4\":\"160\",\"col_5\":\"160\",\"col_6\":\"160\",\"col_7\":\"160\",\"col_8\":\"185\",\"col_9\":\"250\",\"col_10\":\"265\",\"col_11\":\"285\",\"col_12\":\"400\",\"col_13\":\"500\",\"col_14\":\"615\"},\"row_4\":{\"col_1\":\"5 mV\",\"col_2\":\"130\",\"col_3\":\"115\",\"col_4\":\"115\",\"col_5\":\"115\",\"col_6\":\"115\",\"col_7\":\"115\",\"col_8\":\"130\",\"col_9\":\"175\",\"col_10\":\"190\",\"col_11\":\"210\",\"col_12\":\"270\",\"col_13\":\"380\",\"col_14\":\"415\"},\"row_5\":{\"col_1\":\"10 mV\",\"col_2\":\"90\",\"col_3\":\"75\",\"col_4\":\"75\",\"col_5\":\"75\",\"col_6\":\"75\",\"col_7\":\"75\",\"col_8\":\"75\",\"col_9\":\"75\",\"col_10\":\"90\",\"col_11\":\"120\",\"col_12\":\"175\",\"col_13\":\"230\",\"col_14\":\"300\"},\"row_6\":{\"col_1\":\"20 mV\",\"col_2\":\"60\",\"col_3\":\"50\",\"col_4\":\"50\",\"col_5\":\"50\",\"col_6\":\"50\",\"col_7\":\"50\",\"col_8\":\"50\",\"col_9\":\"50\",\"col_10\":\"60\",\"col_11\":\"85\",\"col_12\":\"120\",\"col_13\":\"170\",\"col_14\":\"215\"},\"row_7\":{\"col_1\":\"50 mV\",\"col_2\":\"35\",\"col_3\":\"30\",\"col_4\":\"30\",\"col_5\":\"30\",\"col_6\":\"30\",\"col_7\":\"30\",\"col_8\":\"30\",\"col_9\":\"35\",\"col_10\":\"40\",\"col_11\":\"50\",\"col_12\":\"75\",\"col_13\":\"100\",\"col_14\":\"130\"},\"row_8\":{\"col_1\":\"100 mV\",\"col_2\":\"30\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"25\",\"col_6\":\"25\",\"col_7\":\"25\",\"col_8\":\"25\",\"col_9\":\"25\",\"col_10\":\"27\",\"col_11\":\"30\",\"col_12\":\"45\",\"col_13\":\"60\",\"col_14\":\"80\"},\"row_9\":{\"col_1\":\"200 mV\",\"col_2\":\"22\",\"col_3\":\"22\",\"col_4\":\"22\",\"col_5\":\"22\",\"col_6\":\"22\",\"col_7\":\"22\",\"col_8\":\"22\",\"col_9\":\"22\",\"col_10\":\"22\",\"col_11\":\"25\",\"col_12\":\"35\",\"col_13\":\"50\",\"col_14\":\"70\"},\"row_10\":{\"col_1\":\"500 mV\",\"col_2\":\"12\",\"col_3\":\"11\",\"col_4\":\"11\",\"col_5\":\"11\",\"col_6\":\"11\",\"col_7\":\"11\",\"col_8\":\"11\",\"col_9\":\"11\",\"col_10\":\"11\",\"col_11\":\"12\",\"col_12\":\"25\",\"col_13\":\"40\",\"col_14\":\"60\"},\"row_11\":{\"col_1\":\"1 V\",\"col_2\":\"7\",\"col_3\":\"6\",\"col_4\":\"6\",\"col_5\":\"6\",\"col_6\":\"5\",\"col_7\":\"5\",\"col_8\":\"5\",\"col_9\":\"5\",\"col_10\":\"6\",\"col_11\":\"8\",\"col_12\":\"12\",\"col_13\":\"25\",\"col_14\":\"35\"},\"row_12\":{\"col_1\":\"2 V\",\"col_2\":\"7\",\"col_3\":\"6\",\"col_4\":\"6\",\"col_5\":\"6\",\"col_6\":\"5\",\"col_7\":\"5\",\"col_8\":\"5\",\"col_9\":\"5\",\"col_10\":\"6\",\"col_11\":\"8\",\"col_12\":\"12\",\"col_13\":\"25\",\"col_14\":\"35\"},\"row_13\":{\"col_1\":\"5 V\",\"col_2\":\"9\",\"col_3\":\"8\",\"col_4\":\"8\",\"col_5\":\"8\",\"col_6\":\"7\",\"col_7\":\"7\",\"col_8\":\"7\",\"col_9\":\"8\",\"col_10\":\"8\",\"col_11\":\"10\",\"col_12\":\"13\",\"col_13\":\"25\",\"col_14\":\"35\"},\"row_14\":{\"col_1\":\"7 V\",\"col_2\":\"10\",\"col_3\":\"9\",\"col_4\":\"9\",\"col_5\":\"8\",\"col_6\":\"8\",\"col_7\":\"8\",\"col_8\":\"8\",\"col_9\":\"8\",\"col_10\":\"9\",\"col_11\":\"10\",\"col_12\":\"15\",\"col_13\":\"30\",\"col_14\":\"40\"},\"row_15\":{\"col_1\":\"10 V\",\"col_2\":\"12\",\"col_3\":\"11\",\"col_4\":\"11\",\"col_5\":\"10\",\"col_6\":\"10\",\"col_7\":\"10\",\"col_8\":\"10\",\"col_9\":\"10\",\"col_10\":\"11\",\"col_11\":\"13\",\"col_12\":\"20\",\"col_13\":\"35\",\"col_14\":\"50\"},\"row_16\":{\"col_1\":\"20 V\",\"col_2\":\"13\",\"col_3\":\"12\",\"col_4\":\"12\",\"col_5\":\"11\",\"col_6\":\"11\",\"col_7\":\"11\",\"col_8\":\"11\",\"col_9\":\"11\",\"col_10\":\"12\",\"col_11\":\"13\",\"col_12\":\"20\",\"col_13\":\"35\",\"col_14\":\"50\"},\"row_17\":{\"col_1\":\"50 V\",\"col_2\":\"13\",\"col_3\":\"13\",\"col_4\":\"13\",\"col_5\":\"12\",\"col_6\":\"12\",\"col_7\":\"12\",\"col_8\":\"12\",\"col_9\":\"12\",\"col_10\":\"13\",\"col_11\":\"13\",\"col_12\":\"-\",\"col_13\":\"-\",\"col_14\":\"-\"},\"row_18\":{\"col_1\":\"70 V\",\"col_2\":\"15\",\"col_3\":\"13\",\"col_4\":\"13\",\"col_5\":\"13\",\"col_6\":\"13\",\"col_7\":\"13\",\"col_8\":\"13\",\"col_9\":\"15\",\"col_10\":\"17\",\"col_11\":\"17\",\"col_12\":\"-\",\"col_13\":\"-\",\"col_14\":\"-\"},\"row_19\":{\"col_1\":\"100 V\",\"col_2\":\"19\",\"col_3\":\"16\",\"col_4\":\"16\",\"col_5\":\"15\",\"col_6\":\"15\",\"col_7\":\"15\",\"col_8\":\"15\",\"col_9\":\"16\",\"col_10\":\"20\",\"col_11\":\"25\",\"col_12\":\"-\",\"col_13\":\"-\",\"col_14\":\"-\"},\"row_20\":{\"col_1\":\"200 V\",\"col_2\":\"20\",\"col_3\":\"19\",\"col_4\":\"19\",\"col_5\":\"17\",\"col_6\":\"17\",\"col_7\":\"17\",\"col_8\":\"19\",\"col_9\":\"20\",\"col_10\":\"25\",\"col_11\":\"-\",\"col_12\":\"-\",\"col_13\":\"-\",\"col_14\":\"-\"},\"row_21\":{\"col_1\":\"500 V\",\"col_2\":\"30\",\"col_3\":\"24\",\"col_4\":\"20\",\"col_5\":\"19\",\"col_6\":\"19\",\"col_7\":\"19\",\"col_8\":\"26\",\"col_9\":\"40\",\"col_10\":\"60\",\"col_11\":\"-\",\"col_12\":\"-\",\"col_13\":\"-\",\"col_14\":\"-\"},\"row_22\":{\"col_1\":\"1000 V\",\"col_2\":\"40\",\"col_3\":\"30\",\"col_4\":\"30\",\"col_5\":\"26\",\"col_6\":\"26\",\"col_7\":\"26\",\"col_8\":\"30\",\"col_9\":\"40\",\"col_10\":\"65\",\"col_11\":\"-\",\"col_12\":\"-\",\"col_13\":\"-\",\"col_14\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "",
+      "groupIdentifier": null,
+      "publicationDate": "2013-08-06",
+      "approvalDate": "2013-08-06",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator, AC voltage generator",
+      "instrumentMethod": "AC/DC transfer difference",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 18648,
+      "status": "Published",
+      "statusDate": "2013-08-06",
+      "kcdbCode": "EURAMET-EM-GR-00000EE0-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "EURAMET",
+      "countryValue": "Greece",
+      "nmiCode": "EIM",
+      "nmiName": "Hellenic Institute of Metrology",
+      "nmiServiceCode": "8.5",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage up to 1100 V: sources",
+      "cmc": {
+        "lowerLimit": 0.001,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 26.0,
+        "upperLimit": 2600.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-1393",
+        "tableRows": 9,
+        "tableCols": 16,
+        "tableComment": "The expanded uncertainties given in this table are expressed in µV/V",
+        "tableContents": "{\"row_1\":{\"col_1\":\"\",\"col_2\":\"10 Hz\",\"col_3\":\"20 Hz\",\"col_4\":\"30 Hz\",\"col_5\":\"40 Hz\",\"col_6\":\"300 Hz\",\"col_7\":\"500 Hz\",\"col_8\":\"1 kHz\",\"col_9\":\"10 kHz\",\"col_10\":\"20 kHz\",\"col_11\":\"30 kHz\",\"col_12\":\"50 kHz\",\"col_13\":\"100 kHz\",\"col_14\":\"300 kHz\",\"col_15\":\"500 kHz\",\"col_16\":\"1 MHz\"},\"row_2\":{\"col_1\":\"1 mV\",\"col_2\":\"590\",\"col_3\":\"590\",\"col_4\":\"590\",\"col_5\":\"590\",\"col_6\":\"590\",\"col_7\":\"590\",\"col_8\":\"590\",\"col_9\":\"590\",\"col_10\":\"590\",\"col_11\":\"580\",\"col_12\":\"580\",\"col_13\":\"780\",\"col_14\":\"1400\",\"col_15\":\"2400\",\"col_16\":\"2600\"},\"row_3\":{\"col_1\":\"10 mV\",\"col_2\":\"210\",\"col_3\":\"210\",\"col_4\":\"210\",\"col_5\":\"210\",\"col_6\":\"210\",\"col_7\":\"210\",\"col_8\":\"210\",\"col_9\":\"220\",\"col_10\":\"220\",\"col_11\":\"270\",\"col_12\":\"270\",\"col_13\":\"210\",\"col_14\":\"800\",\"col_15\":\"780\",\"col_16\":\"1800\"},\"row_4\":{\"col_1\":\"100 mV\",\"col_2\":\"90\",\"col_3\":\"90\",\"col_4\":\"90\",\"col_5\":\"90\",\"col_6\":\"90\",\"col_7\":\"90\",\"col_8\":\"44\",\"col_9\":\"44\",\"col_10\":\"44\",\"col_11\":\"44\",\"col_12\":\"44\",\"col_13\":\"44\",\"col_14\":\"110\",\"col_15\":\"1400\",\"col_16\":\"1400\"},\"row_5\":{\"col_1\":\"1 V\",\"col_2\":\"26\",\"col_3\":\"26\",\"col_4\":\"26\",\"col_5\":\"26\",\"col_6\":\"26\",\"col_7\":\"26\",\"col_8\":\"26\",\"col_9\":\"26\",\"col_10\":\"26\",\"col_11\":\"26\",\"col_12\":\"33\",\"col_13\":\"40\",\"col_14\":\"100\",\"col_15\":\"230\",\"col_16\":\"860\"},\"row_6\":{\"col_1\":\"10 V\",\"col_2\":\"37\",\"col_3\":\"37\",\"col_4\":\"37\",\"col_5\":\"30\",\"col_6\":\"30\",\"col_7\":\"30\",\"col_8\":\"30\",\"col_9\":\"30\",\"col_10\":\"30\",\"col_11\":\"30\",\"col_12\":\"30\",\"col_13\":\"43\",\"col_14\":\"100\",\"col_15\":\"270\",\"col_16\":\"860\"},\"row_7\":{\"col_1\":\"100 V\",\"col_2\":\"40\",\"col_3\":\"40\",\"col_4\":\"40\",\"col_5\":\"33\",\"col_6\":\"33\",\"col_7\":\"33\",\"col_8\":\"33\",\"col_9\":\"33\",\"col_10\":\"33\",\"col_11\":\"33\",\"col_12\":\"40\",\"col_13\":\"47\",\"col_14\":\"-\",\"col_15\":\"-\",\"col_16\":\"-\"},\"row_8\":{\"col_1\":\"700 V\",\"col_2\":\"-\",\"col_3\":\"-\",\"col_4\":\"-\",\"col_5\":\"-\",\"col_6\":\"-\",\"col_7\":\"-\",\"col_8\":\"-\",\"col_9\":\"-\",\"col_10\":\"-\",\"col_11\":\"-\",\"col_12\":\"130\",\"col_13\":\"400\",\"col_14\":\"-\",\"col_15\":\"-\",\"col_16\":\"-\"},\"row_9\":{\"col_1\":\"1000 V\",\"col_2\":\"-\",\"col_3\":\"-\",\"col_4\":\"-\",\"col_5\":\"50\",\"col_6\":\"50\",\"col_7\":\"50\",\"col_8\":\"50\",\"col_9\":\"50\",\"col_10\":\"50\",\"col_11\":\"80\",\"col_12\":\"-\",\"col_13\":\"-\",\"col_14\":\"-\",\"col_15\":\"-\",\"col_16\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "",
+      "groupIdentifier": null,
+      "publicationDate": "2013-08-06",
+      "approvalDate": "2013-08-06",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "Direct comparison",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 19536,
+      "status": "Published",
+      "statusDate": "2019-02-07",
+      "kcdbCode": "EURAMET-EM-SI-00000F2O-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "EURAMET",
+      "countryValue": "Slovenia",
+      "nmiCode": "MIRS/SIQ/Metrology",
+      "nmiName": "MIRS/Slovenian Institute of Quality and Metrology/Metrology",
+      "nmiServiceCode": null,
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage up to 1100 V: sources",
+      "cmc": {
+        "lowerLimit": 0.002,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 15.0,
+        "upperLimit": 1200.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-1760",
+        "tableRows": 19,
+        "tableCols": 21,
+        "tableComment": "The expanded uncertainties given in this table are expressed in µV/V",
+        "tableContents": "{\"row_1\":{\"col_1\":\"\",\"col_2\":\"10 Hz\",\"col_3\":\"20 Hz\",\"col_4\":\"30 Hz\",\"col_5\":\"40 Hz\",\"col_6\":\"55 Hz\",\"col_7\":\"120 Hz\",\"col_8\":\"500 Hz\",\"col_9\":\"1 kHz\",\"col_10\":\"10 kHz\",\"col_11\":\"20 kHz\",\"col_12\":\"30 kHz\",\"col_13\":\"50 kHz\",\"col_14\":\"70 kHz\",\"col_15\":\"100 kHz\",\"col_16\":\"200 kHz\",\"col_17\":\"300 kHz\",\"col_18\":\"500 kHz\",\"col_19\":\"700 kHz\",\"col_20\":\"800 kHz\",\"col_21\":\"1 MHz\"},\"row_2\":{\"col_1\":\"0.002 V\",\"col_2\":\"700\",\"col_3\":\"650\",\"col_4\":\"650\",\"col_5\":\"650\",\"col_6\":\"650\",\"col_7\":\"650\",\"col_8\":\"650\",\"col_9\":\"650\",\"col_10\":\"650\",\"col_11\":\"650\",\"col_12\":\"650\",\"col_13\":\"650\",\"col_14\":\"650\",\"col_15\":\"650\",\"col_16\":\"700\",\"col_17\":\"700\",\"col_18\":\"800\",\"col_19\":\"1000\",\"col_20\":\"1000\",\"col_21\":\"1200\"},\"row_3\":{\"col_1\":\"0.005 V\",\"col_2\":\"300\",\"col_3\":\"250\",\"col_4\":\"250\",\"col_5\":\"250\",\"col_6\":\"250\",\"col_7\":\"250\",\"col_8\":\"250\",\"col_9\":\"250\",\"col_10\":\"250\",\"col_11\":\"250\",\"col_12\":\"250\",\"col_13\":\"250\",\"col_14\":\"300\",\"col_15\":\"300\",\"col_16\":\"350\",\"col_17\":\"350\",\"col_18\":\"400\",\"col_19\":\"500\",\"col_20\":\"600\",\"col_21\":\"700\"},\"row_4\":{\"col_1\":\"0.01 V\",\"col_2\":\"130\",\"col_3\":\"120\",\"col_4\":\"120\",\"col_5\":\"110\",\"col_6\":\"110\",\"col_7\":\"110\",\"col_8\":\"110\",\"col_9\":\"110\",\"col_10\":\"110\",\"col_11\":\"110\",\"col_12\":\"110\",\"col_13\":\"120\",\"col_14\":\"120\",\"col_15\":\"150\",\"col_16\":\"160\",\"col_17\":\"200\",\"col_18\":\"300\",\"col_19\":\"400\",\"col_20\":\"400\",\"col_21\":\"500\"},\"row_5\":{\"col_1\":\"0.02 V\",\"col_2\":\"100\",\"col_3\":\"90\",\"col_4\":\"90\",\"col_5\":\"80\",\"col_6\":\"80\",\"col_7\":\"80\",\"col_8\":\"80\",\"col_9\":\"80\",\"col_10\":\"80\",\"col_11\":\"80\",\"col_12\":\"80\",\"col_13\":\"100\",\"col_14\":\"100\",\"col_15\":\"120\",\"col_16\":\"140\",\"col_17\":\"160\",\"col_18\":\"250\",\"col_19\":\"300\",\"col_20\":\"400\",\"col_21\":\"450\"},\"row_6\":{\"col_1\":\"0.05 V\",\"col_2\":\"75\",\"col_3\":\"60\",\"col_4\":\"60\",\"col_5\":\"50\",\"col_6\":\"50\",\"col_7\":\"50\",\"col_8\":\"50\",\"col_9\":\"50\",\"col_10\":\"50\",\"col_11\":\"50\",\"col_12\":\"60\",\"col_13\":\"80\",\"col_14\":\"100\",\"col_15\":\"100\",\"col_16\":\"150\",\"col_17\":\"150\",\"col_18\":\"250\",\"col_19\":\"300\",\"col_20\":\"350\",\"col_21\":\"400\"},\"row_7\":{\"col_1\":\"0.1 V\",\"col_2\":\"75\",\"col_3\":\"60\",\"col_4\":\"60\",\"col_5\":\"50\",\"col_6\":\"50\",\"col_7\":\"50\",\"col_8\":\"50\",\"col_9\":\"50\",\"col_10\":\"50\",\"col_11\":\"50\",\"col_12\":\"60\",\"col_13\":\"80\",\"col_14\":\"100\",\"col_15\":\"100\",\"col_16\":\"150\",\"col_17\":\"150\",\"col_18\":\"250\",\"col_19\":\"300\",\"col_20\":\"350\",\"col_21\":\"400\"},\"row_8\":{\"col_1\":\"0.2 V\",\"col_2\":\"75\",\"col_3\":\"60\",\"col_4\":\"60\",\"col_5\":\"50\",\"col_6\":\"50\",\"col_7\":\"50\",\"col_8\":\"50\",\"col_9\":\"50\",\"col_10\":\"50\",\"col_11\":\"50\",\"col_12\":\"60\",\"col_13\":\"80\",\"col_14\":\"100\",\"col_15\":\"100\",\"col_16\":\"150\",\"col_17\":\"150\",\"col_18\":\"250\",\"col_19\":\"300\",\"col_20\":\"350\",\"col_21\":\"400\"},\"row_9\":{\"col_1\":\"0.5 V\",\"col_2\":\"30\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"20\",\"col_6\":\"20\",\"col_7\":\"20\",\"col_8\":\"18\",\"col_9\":\"15\",\"col_10\":\"15\",\"col_11\":\"18\",\"col_12\":\"18\",\"col_13\":\"20\",\"col_14\":\"25\",\"col_15\":\"30\",\"col_16\":\"50\",\"col_17\":\"75\",\"col_18\":\"100\",\"col_19\":\"200\",\"col_20\":\"250\",\"col_21\":\"300\"},\"row_10\":{\"col_1\":\"1 V\",\"col_2\":\"30\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"20\",\"col_6\":\"20\",\"col_7\":\"20\",\"col_8\":\"18\",\"col_9\":\"15\",\"col_10\":\"15\",\"col_11\":\"18\",\"col_12\":\"18\",\"col_13\":\"20\",\"col_14\":\"25\",\"col_15\":\"30\",\"col_16\":\"50\",\"col_17\":\"75\",\"col_18\":\"100\",\"col_19\":\"200\",\"col_20\":\"250\",\"col_21\":\"300\"},\"row_11\":{\"col_1\":\"2 V\",\"col_2\":\"30\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"20\",\"col_6\":\"20\",\"col_7\":\"20\",\"col_8\":\"18\",\"col_9\":\"15\",\"col_10\":\"15\",\"col_11\":\"18\",\"col_12\":\"18\",\"col_13\":\"20\",\"col_14\":\"25\",\"col_15\":\"30\",\"col_16\":\"50\",\"col_17\":\"75\",\"col_18\":\"100\",\"col_19\":\"200\",\"col_20\":\"250\",\"col_21\":\"300\"},\"row_12\":{\"col_1\":\"5 V\",\"col_2\":\"30\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"20\",\"col_6\":\"20\",\"col_7\":\"20\",\"col_8\":\"18\",\"col_9\":\"18\",\"col_10\":\"18\",\"col_11\":\"18\",\"col_12\":\"20\",\"col_13\":\"25\",\"col_14\":\"25\",\"col_15\":\"30\",\"col_16\":\"50\",\"col_17\":\"75\",\"col_18\":\"100\",\"col_19\":\"200\",\"col_20\":\"250\",\"col_21\":\"300\"},\"row_13\":{\"col_1\":\"10 V\",\"col_2\":\"30\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"20\",\"col_6\":\"20\",\"col_7\":\"20\",\"col_8\":\"20\",\"col_9\":\"20\",\"col_10\":\"20\",\"col_11\":\"20\",\"col_12\":\"25\",\"col_13\":\"25\",\"col_14\":\"25\",\"col_15\":\"30\",\"col_16\":\"50\",\"col_17\":\"75\",\"col_18\":\"100\",\"col_19\":\"200\",\"col_20\":\"250\",\"col_21\":\"300\"},\"row_14\":{\"col_1\":\"20 V\",\"col_2\":\"30\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"20\",\"col_6\":\"20\",\"col_7\":\"20\",\"col_8\":\"20\",\"col_9\":\"20\",\"col_10\":\"20\",\"col_11\":\"20\",\"col_12\":\"25\",\"col_13\":\"25\",\"col_14\":\"25\",\"col_15\":\"30\",\"col_16\":\"50\",\"col_17\":\"75\",\"col_18\":\"100\",\"col_19\":\"200\",\"col_20\":\"250\",\"col_21\":\"300\"},\"row_15\":{\"col_1\":\"50 V\",\"col_2\":\"35\",\"col_3\":\"35\",\"col_4\":\"35\",\"col_5\":\"30\",\"col_6\":\"30\",\"col_7\":\"30\",\"col_8\":\"30\",\"col_9\":\"30\",\"col_10\":\"30\",\"col_11\":\"30\",\"col_12\":\"35\",\"col_13\":\"35\",\"col_14\":\"40\",\"col_15\":\"50\",\"col_16\":\"60\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\",\"col_20\":\"-\",\"col_21\":\"-\"},\"row_16\":{\"col_1\":\"100 V\",\"col_2\":\"40\",\"col_3\":\"35\",\"col_4\":\"35\",\"col_5\":\"35\",\"col_6\":\"35\",\"col_7\":\"35\",\"col_8\":\"35\",\"col_9\":\"35\",\"col_10\":\"35\",\"col_11\":\"35\",\"col_12\":\"40\",\"col_13\":\"45\",\"col_14\":\"50\",\"col_15\":\"60\",\"col_16\":\"75\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\",\"col_20\":\"-\",\"col_21\":\"-\"},\"row_17\":{\"col_1\":\"200 V\",\"col_2\":\"40\",\"col_3\":\"35\",\"col_4\":\"35\",\"col_5\":\"35\",\"col_6\":\"35\",\"col_7\":\"35\",\"col_8\":\"35\",\"col_9\":\"35\",\"col_10\":\"35\",\"col_11\":\"35\",\"col_12\":\"40\",\"col_13\":\"45\",\"col_14\":\"50\",\"col_15\":\"65\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\",\"col_20\":\"-\",\"col_21\":\"-\"},\"row_18\":{\"col_1\":\"400 V\",\"col_2\":\"45\",\"col_3\":\"40\",\"col_4\":\"40\",\"col_5\":\"40\",\"col_6\":\"40\",\"col_7\":\"40\",\"col_8\":\"40\",\"col_9\":\"40\",\"col_10\":\"40\",\"col_11\":\"40\",\"col_12\":\"45\",\"col_13\":\"50\",\"col_14\":\"70\",\"col_15\":\"80\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\",\"col_20\":\"-\",\"col_21\":\"-\"},\"row_19\":{\"col_1\":\"1000 V\",\"col_2\":\"50\",\"col_3\":\"45\",\"col_4\":\"45\",\"col_5\":\"40\",\"col_6\":\"40\",\"col_7\":\"40\",\"col_8\":\"40\",\"col_9\":\"40\",\"col_10\":\"40\",\"col_11\":\"40\",\"col_12\":\"50\",\"col_13\":\"60\",\"col_14\":\"80\",\"col_15\":\"100\",\"col_16\":\"-\",\"col_17\":\"-\",\"col_18\":\"-\",\"col_19\":\"-\",\"col_20\":\"-\",\"col_21\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "",
+      "groupIdentifier": null,
+      "publicationDate": "2019-02-07",
+      "approvalDate": "2019-02-07",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "AC/DC voltage transfer method",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 21381,
+      "status": "Published",
+      "statusDate": "2013-08-06",
+      "kcdbCode": "EURAMET-EM-CH-00000GHX-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "EURAMET",
+      "countryValue": "Switzerland",
+      "nmiCode": "METAS",
+      "nmiName": "Federal Institute of Metrology",
+      "nmiServiceCode": "77",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage up to 1000 V: sources",
+      "cmc": {
+        "lowerLimit": 0.002,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 11.0,
+        "upperLimit": 2300.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-1917",
+        "tableRows": 3,
+        "tableCols": 16,
+        "tableComment": "The expanded uncertainties given in this table are expressed in µV/V",
+        "tableContents": "{\"row_1\":{\"col_1\":\"\",\"col_2\":\" 10 Hz\",\"col_3\":\" 20 Hz\",\"col_4\":\" 30 Hz\",\"col_5\":\" 40 Hz\",\"col_6\":\" 500 Hz\",\"col_7\":\" 1 kHz\",\"col_8\":\" 10 kHz\",\"col_9\":\" 20 kHz\",\"col_10\":\" 50 kHz\",\"col_11\":\" 70 kHz\",\"col_12\":\" 100 kHz\",\"col_13\":\" 200 kHz\",\"col_14\":\" 500 kHz\",\"col_15\":\" 700 kHz\",\"col_16\":\" 1 MHz\"},\"row_2\":{\"col_1\":\"2 mV\",\"col_2\":\"1000\",\"col_3\":\"740\",\"col_4\":\"740\",\"col_5\":\"740\",\"col_6\":\"740\",\"col_7\":\"740\",\"col_8\":\"740\",\"col_9\":\"740\",\"col_10\":\"740\",\"col_11\":\"870\",\"col_12\":\"870\",\"col_13\":\"1140\",\"col_14\":\"2030\",\"col_15\":\"2260\",\"col_16\":\"2300\"},\"row_3\":{\"col_1\":\"6 mV\",\"col_2\":\"990\",\"col_3\":\"720\",\"col_4\":\"720\",\"col_5\":\"720\",\"col_6\":\"720\",\"col_7\":\"720\",\"col_8\":\"720\",\"col_9\":\"720\",\"col_10\":\"720\",\"col_11\":\"860\",\"col_12\":\"860\",\"col_13\":\"1130\",\"col_14\":\"2020\",\"col_15\":\"2250\",\"col_16\":\"2\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "",
+      "groupIdentifier": null,
+      "publicationDate": "2013-08-06",
+      "approvalDate": "2013-08-06",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "Thermal transposition with thermal converters",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 34396,
+      "status": "Published",
+      "statusDate": "2022-02-10",
+      "kcdbCode": "SIM-EM-CO-00000N2F-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "Colombia",
+      "nmiCode": "INM (CO)",
+      "nmiName": "Instituto Nacional de Metrología de Colombia",
+      "nmiServiceCode": "INM-L03-32",
+      "nmiServiceLink": "",
+      "quantityValue": "AC voltage: sources",
+      "cmc": {
+        "lowerLimit": 0.002,
+        "upperLimit": 100.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 4.2e-06,
+        "upperLimit": 0.0069,
+        "unit": "V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "Matrix INM-L03-32",
+        "tableRows": 7,
+        "tableCols": 2,
+        "tableComment": "",
+        "tableContents": "{\"row_1\": {\"col_1\":\"\", \"col_2\":\"50 Hz to 20 kHz\"}, \"row_2\": {\"col_1\":\"2 mV to &lt; 2.2 mV\", \"col_2\":\"0.0042 mV\"}, \"row_3\": {\"col_1\":\"2.2 mV to &lt; 22 mV\", \"col_2\":\"0.0042 mV to 0.0061 mV\"}, \"row_4\": {\"col_1\":\"22 mV to &lt; 220 mV\", \"col_2\":\"0.0091 mV to 0.027 mV\"}, \"row_5\": {\"col_1\":\"0.22 V to &lt; 2.2 V\", \"col_2\":\"0.000021 V to 0.00012 V\"}, \"row_6\": {\"col_1\":\"2.2 V to &lt; 22 V\", \"col_2\":\"0.00016 V to 0.0012 V\"}, \"row_7\": {\"col_1\":\"22 V to 100 V\", \"col_2\":\"0.0019 V to 0.0069 V\"}}"
+      },
+      "uncertaintyMode": "Absolute",
+      "traceabilitySource": "CENAM",
+      "comments": "",
+      "groupIdentifier": "",
+      "publicationDate": "2022-02-10",
+      "approvalDate": "2022-02-10",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "AC voltage source, multifunction calibrator",
+      "instrumentMethod": "Substitution using an 8-digits multimeter",
+      "parameters": [
+        {
+          "parameterName": "&nbsp;Frequency",
+          "parameterValue": "50 Hz to 20 kHz"
+        }
+      ]
+    },
+    {
+      "id": 34788,
+      "status": "Published",
+      "statusDate": "2022-01-27",
+      "kcdbCode": "APMP-EM-SG-00000CZ1-2",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "APMP",
+      "countryValue": "Singapore",
+      "nmiCode": "NMC, A*STAR",
+      "nmiName": "National Metrology Centre, Agency for Science, Technology and Research",
+      "nmiServiceCode": "5.2.1",
+      "nmiServiceLink": "",
+      "quantityValue": "AC voltage up to 1000 V: sources",
+      "cmc": {
+        "lowerLimit": 0.002,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 15.0,
+        "upperLimit": 5900.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX5.2.1",
+        "tableRows": 22,
+        "tableCols": 22,
+        "tableComment": "The expanded uncertainties given in this table are expressed in &micro;V/V",
+        "tableContents": "{\"row_1\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\\\"></font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">Relative expanded uncertainty / (µV/V)</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">Service Category</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_2\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\"></font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10 Hz</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20 Hz</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">30 Hz</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40 Hz</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">50 Hz</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">55 Hz</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">100 Hz</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">300 Hz</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">1 kHz</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10 kHz</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20 kHz</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">30 kHz</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">50 kHz</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">100 kHz</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">200 kHz</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">300 kHz</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">500 kHz</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">1 MHz</font>\",\"col_20\":\"\",\"col_21\":\"\",\"col_22\":\"\"},\"row_3\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">2 mV</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">1900</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">1900</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">1100</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">840</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">840</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">1500</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">1900</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">3400</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">5000</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">5900</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_4\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10 mV</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">170</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">75</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">70</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">65</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">65</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">65</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">75</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">75</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">75</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">75</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">75</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">90</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">170</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">240</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">670</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_5\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20 mV</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">75</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">55</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">55</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">80</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">150</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">230</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">670</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_6\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60 mV</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">35</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"35\",\"col_9\":\"-\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">150</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">230</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">570</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_7\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">0.1 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">25</font>\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"20\",\"col_6\":\"-\",\"col_7\":\"30\",\"col_8\":\"20\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">25</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">25</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">25</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">85</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">140</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">480</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">`</font>\"},\"row_8\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">0.2 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">25</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">85</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">140</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">480</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_9\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">0.6 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">80</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">260</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_10\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">1 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">25</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">30</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">30</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">180</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_11\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">2 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">30</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">180</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_12\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">6 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">180</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_13\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">50</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">180</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_14\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">19 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">30</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">200</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_15\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">25</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_16\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_17\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">100 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">10</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_18\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">200 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">30</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_19\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">300 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_20\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">600 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_21\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">700 V</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">60</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"},\"row_22\":{\"col_1\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">1 kV</font>\",\"col_2\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_3\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_4\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_5\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_6\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">20</font>\",\"col_7\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_8\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_9\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_10\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_11\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">15</font>\",\"col_12\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">30</font>\",\"col_13\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">40</font>\",\"col_14\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_15\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_16\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_17\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_18\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_19\":\"<font style=\\\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;TEXT-ALIGN: center;\\\">-</font>\",\"col_20\":\"<font style=\\\"FONT-FAMILY: Arial;FONT-SIZE: 10pt;COLOR: #000000;\\\">5.2.1</font>\",\"col_21\":\"\",\"col_22\":\"\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": "NPL (UK), NMC, A*STAR",
+      "comments": "",
+      "groupIdentifier": "",
+      "publicationDate": "2022-01-27",
+      "approvalDate": "2022-01-26",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "AC/DC transfer measurement",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 38290,
+      "status": "Published",
+      "statusDate": "2022-06-27",
+      "kcdbCode": "EURAMET-EM-EE-00000E43-2",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "EURAMET",
+      "countryValue": "Estonia",
+      "nmiCode": "AS METROSERT",
+      "nmiName": "Central Office of Metrology",
+      "nmiServiceCode": "202050",
+      "nmiServiceLink": "",
+      "quantityValue": "AC voltage up to 1000 V: sources",
+      "cmc": {
+        "lowerLimit": 0.1,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 0.02,
+        "upperLimit": 0.79,
+        "unit": "mV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-1181",
+        "tableRows": 7,
+        "tableCols": 15,
+        "tableComment": "The uncertainties in the table are expressed in mV/V.",
+        "tableContents": "{\"row_1\": {\"col_1\":\"<strong>Voltage<\\/strong>\", \"col_2\":\"<strong>10 Hz<\\/strong>\", \"col_3\":\"<strong>55 Hz<\\/strong>\", \"col_4\":\"<strong>110 Hz<\\/strong>\", \"col_5\":\"<strong>300 Hz<\\/strong>\", \"col_6\":\"<strong>1 kHz<\\/strong>\", \"col_7\":\"<strong>10 kHz<\\/strong>\", \"col_8\":\"<strong>30 kHz<\\/strong>\", \"col_9\":\"<strong>50 kHz<\\/strong>\", \"col_10\":\"<strong>80 kHz<\\/strong>\", \"col_11\":\"<strong>100 kHz<\\/strong>\", \"col_12\":\"<strong>300 kHz<\\/strong>\", \"col_13\":\"<strong>500 kHz<\\/strong>\", \"col_14\":\"<strong>700 kHz<\\/strong>\", \"col_15\":\"<strong>1 MHz<\\/strong>\"}, \"row_2\": {\"col_1\":\"100 mV\", \"col_2\":\"0.06\", \"col_3\":\"0.03\", \"col_4\":\"0.03\", \"col_5\":\"0.03\", \"col_6\":\"0.03\", \"col_7\":\"0.03\", \"col_8\":\"0.04\", \"col_9\":\"0.03\", \"col_10\":\"0.03\", \"col_11\":\"0.03\", \"col_12\":\"0.11\", \"col_13\":\"0.21\", \"col_14\":\"0.39\", \"col_15\":\"0.79\"}, \"row_3\": {\"col_1\":\"1 V\", \"col_2\":\"0.04\", \"col_3\":\"0.02\", \"col_4\":\"0.02\", \"col_5\":\"0.02\", \"col_6\":\"0.02\", \"col_7\":\"0.02\", \"col_8\":\"0.02\", \"col_9\":\"0.02\", \"col_10\":\"0.02\", \"col_11\":\"0.02\", \"col_12\":\"0.16\", \"col_13\":\"0.26\", \"col_14\":\"0.42\", \"col_15\":\"0.42\"}, \"row_4\": {\"col_1\":\"10 V\", \"col_2\":\"0.04\", \"col_3\":\"0.02\", \"col_4\":\"0.02\", \"col_5\":\"0.02\", \"col_6\":\"0.02\", \"col_7\":\"0.02\", \"col_8\":\"0.02\", \"col_9\":\"0.02\", \"col_10\":\"0.02\", \"col_11\":\"0.02\", \"col_12\":\"0.17\", \"col_13\":\"0.26\", \"col_14\":\"0.42\", \"col_15\":\"0.42\"}, \"row_5\": {\"col_1\":\"100 V\", \"col_2\":\"0.04\", \"col_3\":\"0.02\", \"col_4\":\"0.02\", \"col_5\":\"0.02\", \"col_6\":\"0.02\", \"col_7\":\"0.02\", \"col_8\":\"0.02\", \"col_9\":\"0.02\", \"col_10\":\"0.03\", \"col_11\":\"0.04\", \"col_12\":\"-\", \"col_13\":\"-\", \"col_14\":\"-\", \"col_15\":\"-\"}, \"row_6\": {\"col_1\":\"200 V\", \"col_2\":\"0.04\", \"col_3\":\"0.03\", \"col_4\":\"0.03\", \"col_5\":\"0.03\", \"col_6\":\"0.03\", \"col_7\":\"0.04\", \"col_8\":\"0.05\", \"col_9\":\"-\", \"col_10\":\"-\", \"col_11\":\"-\", \"col_12\":\"-\", \"col_13\":\"-\", \"col_14\":\"-\", \"col_15\":\"-\"}, \"row_7\": {\"col_1\":\"1000 V\", \"col_2\":\"0.04\", \"col_3\":\"0.03\", \"col_4\":\"0.03\", \"col_5\":\"0.03\", \"col_6\":\"0.03\", \"col_7\":\"0.04\", \"col_8\":\"0.05\", \"col_9\":\"-\", \"col_10\":\"-\", \"col_11\":\"-\", \"col_12\":\"-\", \"col_13\":\"-\", \"col_14\":\"-\", \"col_15\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": "VTT/MIKES, CMI",
+      "comments": "",
+      "groupIdentifier": "",
+      "publicationDate": "2022-06-27",
+      "approvalDate": "2019-02-07",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "AC/DC transfer standard",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 38988,
+      "status": "Published",
+      "statusDate": "2024-04-09",
+      "kcdbCode": "SIM-EM-BR-000008V8-3",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "Brazil",
+      "nmiCode": "INMETRO",
+      "nmiName": "Instituto Nacional de Metrologia, Qualidade e Tecnologia",
+      "nmiServiceCode": "INMETRO/8081",
+      "nmiServiceLink": "",
+      "quantityValue": "AC voltage up to 1100 V: sources",
+      "cmc": {
+        "lowerLimit": 0.002,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 5.5,
+        "upperLimit": 220.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "BR-Matrix 3a",
+        "tableRows": 19,
+        "tableCols": 11,
+        "tableComment": "The expanded uncertainties given in this table are expressed in &micro;V/V.",
+        "tableContents": "{\"row_1\":{\"col_1\":\"<br>\",\"col_2\":\"<br>\",\"col_3\":\"Frequency (kHz)\",\"col_4\":\"Frequency (kHz)\",\"col_5\":\"Frequency (kHz)\",\"col_6\":\"Frequency (kHz)\",\"col_7\":\"Frequency (kHz)\",\"col_8\":\"Frequency (kHz)\",\"col_9\":\"Frequency (kHz)\",\"col_10\":\"Frequency (kHz)\",\"col_11\":\"Frequency (kHz)\"},\"row_2\":{\"col_1\":\"\",\"col_2\":\"\",\"col_3\":\"[0.01, 0.02[\",\"col_4\":\"[0.02, 0.04[\",\"col_5\":\"[0.04, 0.06]\",\"col_6\":\"]0.06, 0.4]\",\"col_7\":\"]0.4, 20]\",\"col_8\":\"]20, 50]\",\"col_9\":\"]50, 100]\",\"col_10\":\"]100, 500]\",\"col_11\":\"]500, 1000]\"},\"row_3\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[0.002, 0.006[\",\"col_3\":\"90\",\"col_4\":\"65\",\"col_5\":\"75\",\"col_6\":\"65\",\"col_7\":\"66\",\"col_8\":\"70\",\"col_9\":\"110\",\"col_10\":\"120\",\"col_11\":\"220\"},\"row_4\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[0.006, 0.01[\",\"col_3\":\"70\",\"col_4\":\"50\",\"col_5\":\"40\",\"col_6\":\"36\",\"col_7\":\"36\",\"col_8\":\"41\",\"col_9\":\"80\",\"col_10\":\"95\",\"col_11\":\"150\"},\"row_5\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[0.01, 0.02[\",\"col_3\":\"70\",\"col_4\":\"50\",\"col_5\":\"35\",\"col_6\":\"31\",\"col_7\":\"33\",\"col_8\":\"37\",\"col_9\":\"75\",\"col_10\":\"85\",\"col_11\":\"120\"},\"row_6\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[0.02, 0.06[\",\"col_3\":\"50\",\"col_4\":\"40\",\"col_5\":\"35\",\"col_6\":\"28\",\"col_7\":\"31\",\"col_8\":\"33\",\"col_9\":\"65\",\"col_10\":\"75\",\"col_11\":\"110\"},\"row_7\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[0.06, 0.1[\",\"col_3\":\"40\",\"col_4\":\"35\",\"col_5\":\"25\",\"col_6\":\"25\",\"col_7\":\"24\",\"col_8\":\"26\",\"col_9\":\"45\",\"col_10\":\"50\",\"col_11\":\"90\"},\"row_8\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[0.1, 0.2[\",\"col_3\":\"40\",\"col_4\":\"35\",\"col_5\":\"25\",\"col_6\":\"25\",\"col_7\":\"20\",\"col_8\":\"23\",\"col_9\":\"35\",\"col_10\":\"40\",\"col_11\":\"70\"},\"row_9\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[0.2, 0.3[\",\"col_3\":\"35\",\"col_4\":\"30\",\"col_5\":\"22\",\"col_6\":\"20\",\"col_7\":\"18\",\"col_8\":\"21\",\"col_9\":\"20\",\"col_10\":\"27\",\"col_11\":\"50\"},\"row_10\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[0.3, 0.8[\",\"col_3\":\"11\",\"col_4\":\"10\",\"col_5\":\"8.0\",\"col_6\":\"7.5\",\"col_7\":\"6.0\",\"col_8\":\"8.5\",\"col_9\":\"10\",\"col_10\":\"17\",\"col_11\":\"35\"},\"row_11\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[0.8, 1[\",\"col_3\":\"11\",\"col_4\":\"10\",\"col_5\":\"7.5\",\"col_6\":\"7.5\",\"col_7\":\"6.0\",\"col_8\":\"8.5\",\"col_9\":\"10\",\"col_10\":\"17\",\"col_11\":\"25\"},\"row_12\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"[1, 10]\",\"col_3\":\"6.0\",\"col_4\":\"5.5\",\"col_5\":\"5.5\",\"col_6\":\"5.5\",\"col_7\":\"5.5\",\"col_8\":\"8.0\",\"col_9\":\"10\",\"col_10\":\"17\",\"col_11\":\"26\"},\"row_13\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"]10, 20]\",\"col_3\":\"8.0\",\"col_4\":\"8.0\",\"col_5\":\"8.0\",\"col_6\":\"8.0\",\"col_7\":\"8.0\",\"col_8\":\"10\",\"col_9\":\"15\",\"col_10\":\"20\",\"col_11\":\"30\"},\"row_14\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"]20, 30]\",\"col_3\":\"8.0\",\"col_4\":\"8.0\",\"col_5\":\"8.0\",\"col_6\":\"8.0\",\"col_7\":\"8.0\",\"col_8\":\"10\",\"col_9\":\"15\",\"col_10\":\"20\",\"col_11\":\"--\"},\"row_15\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"]30, 100]\",\"col_3\":\"9.0\",\"col_4\":\"8.5\",\"col_5\":\"8.0\",\"col_6\":\"8.0\",\"col_7\":\"8.5\",\"col_8\":\"11\",\"col_9\":\"15\",\"col_10\":\"--\",\"col_11\":\"--\"},\"row_16\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"]100, 200]\",\"col_3\":\"13\",\"col_4\":\"13\",\"col_5\":\"13\",\"col_6\":\"13\",\"col_7\":\"13\",\"col_8\":\"15\",\"col_9\":\"24\",\"col_10\":\"--\",\"col_11\":\"--\"},\"row_17\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"]200, 300]\",\"col_3\":\"--\",\"col_4\":\"--\",\"col_5\":\"13\",\"col_6\":\"13\",\"col_7\":\"13\",\"col_8\":\"15\",\"col_9\":\"26\",\"col_10\":\"--\",\"col_11\":\"--\"},\"row_18\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"]300, 600]\",\"col_3\":\"--\",\"col_4\":\"--\",\"col_5\":\"16\",\"col_6\":\"16\",\"col_7\":\"16\",\"col_8\":\"18\",\"col_9\":\"32\",\"col_10\":\"--\",\"col_11\":\"--\"},\"row_19\":{\"col_1\":\"Voltage<br>(V)\",\"col_2\":\"]600, 1000]\",\"col_3\":\"--\",\"col_4\":\"--\",\"col_5\":\"16\",\"col_6\":\"16\",\"col_7\":\"16\",\"col_8\":\"--\",\"col_9\":\"--\",\"col_10\":\"--\",\"col_11\":\"--\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": "Inmetro",
+      "comments": "",
+      "groupIdentifier": "",
+      "publicationDate": "2024-04-09",
+      "approvalDate": "2024-04-09",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "AC/DC transfer",
+      "parameters": [
+        {
+          "parameterName": "Frequency range",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 39900,
+      "status": "Published",
+      "statusDate": "2023-02-21",
+      "kcdbCode": "EURAMET-EM-UA-00000OOS-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "EURAMET",
+      "countryValue": "Ukraine",
+      "nmiCode": "SE \"Ukrmetrteststandard\"",
+      "nmiName": "State Enterprise \"Ukrmetrteststandard\"",
+      "nmiServiceCode": "SE \"Ukrmetrteststandard\"/4",
+      "nmiServiceLink": "",
+      "quantityValue": "AC voltage up to 1000 V: sources",
+      "cmc": {
+        "lowerLimit": 0.1,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 20.0,
+        "upperLimit": 400.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-352",
+        "tableRows": 12,
+        "tableCols": 13,
+        "tableComment": "The expanded uncertainties given in this table are expressed in µV/V",
+        "tableContents": "{\"row_1\": {\"col_1\":\"\", \"col_2\":\"10 Hz\", \"col_3\":\"20 Hz\", \"col_4\":\"30 Hz to 300 Hz\", \"col_5\":\"400 Hz to 10 kHz\", \"col_6\":\"20 kHz to 30 kHz\", \"col_7\":\"50 kHz\", \"col_8\":\"70 kHz\", \"col_9\":\"100 kHz\", \"col_10\":\"200 kHz to 300 kHz\", \"col_11\":\"500 kHz\", \"col_12\":\"700 kHz to 800 kHz\", \"col_13\":\"1 MHz\"}, \"row_2\": {\"col_1\":\"100 mV / 200 mV\", \"col_2\":\"60\", \"col_3\":\"55\", \"col_4\":\"55\", \"col_5\":\"50\", \"col_6\":\"50\", \"col_7\":\"50\", \"col_8\":\"50\", \"col_9\":\"60\", \"col_10\":\"80\", \"col_11\":\"300\", \"col_12\":\"360\", \"col_13\":\"400\"}, \"row_3\": {\"col_1\":\"300 mV / 500 mV\", \"col_2\":\"30\", \"col_3\":\"30\", \"col_4\":\"25\", \"col_5\":\"25\", \"col_6\":\"30\", \"col_7\":\"30\", \"col_8\":\"30\", \"col_9\":\"45\", \"col_10\":\"70\", \"col_11\":\"250\", \"col_12\":\"350\", \"col_13\":\"400\"}, \"row_4\": {\"col_1\":\"1 V / 2 V\", \"col_2\":\"30\", \"col_3\":\"25\", \"col_4\":\"25\", \"col_5\":\"20\", \"col_6\":\"20\", \"col_7\":\"20\", \"col_8\":\"20\", \"col_9\":\"30\", \"col_10\":\"70\", \"col_11\":\"250\", \"col_12\":\"350\", \"col_13\":\"400\"}, \"row_5\": {\"col_1\":\"3 V / 4 V\", \"col_2\":\"25\", \"col_3\":\"20\", \"col_4\":\"20\", \"col_5\":\"20\", \"col_6\":\"20\", \"col_7\":\"20\", \"col_8\":\"20\", \"col_9\":\"20\", \"col_10\":\"50\", \"col_11\":\"250\", \"col_12\":\"350\", \"col_13\":\"400\"}, \"row_6\": {\"col_1\":\"10 V\", \"col_2\":\"30\", \"col_3\":\"20\", \"col_4\":\"20\", \"col_5\":\"20\", \"col_6\":\"20\", \"col_7\":\"20\", \"col_8\":\"20\", \"col_9\":\"20\", \"col_10\":\"50\", \"col_11\":\"250\", \"col_12\":\"300\", \"col_13\":\"400\"}, \"row_7\": {\"col_1\":\"20 V\", \"col_2\":\"30\", \"col_3\":\"20\", \"col_4\":\"20\", \"col_5\":\"20\", \"col_6\":\"20\", \"col_7\":\"20\", \"col_8\":\"20\", \"col_9\":\"25\", \"col_10\":\"50\", \"col_11\":\"200\", \"col_12\":\"300\", \"col_13\":\"400\"}, \"row_8\": {\"col_1\":\"30 V\", \"col_2\":\"25\", \"col_3\":\"30\", \"col_4\":\"25\", \"col_5\":\"20\", \"col_6\":\"20\", \"col_7\":\"25\", \"col_8\":\"30\", \"col_9\":\"30\", \"col_10\":\"-\", \"col_11\":\"-\", \"col_12\":\"-\", \"col_13\":\"-\"}, \"row_9\": {\"col_1\":\"100 V\", \"col_2\":\"50\", \"col_3\":\"40\", \"col_4\":\"35\", \"col_5\":\"35\", \"col_6\":\"35\", \"col_7\":\"40\", \"col_8\":\"45\", \"col_9\":\"50\", \"col_10\":\"-\", \"col_11\":\"-\", \"col_12\":\"-\", \"col_13\":\"-\"}, \"row_10\": {\"col_1\":\"300 V\", \"col_2\":\"\", \"col_3\":\"45\", \"col_4\":\"45\", \"col_5\":\"50\", \"col_6\":\"50\", \"col_7\":\"50\", \"col_8\":\"60\", \"col_9\":\"70\", \"col_10\":\"-\", \"col_11\":\"-\", \"col_12\":\"-\", \"col_13\":\"-\"}, \"row_11\": {\"col_1\":\"500 V\", \"col_2\":\"\", \"col_3\":\"55\", \"col_4\":\"55\", \"col_5\":\"60\", \"col_6\":\"60\", \"col_7\":\"60\", \"col_8\":\"70\", \"col_9\":\"100\", \"col_10\":\"-\", \"col_11\":\"-\", \"col_12\":\"-\", \"col_13\":\"-\"}, \"row_12\": {\"col_1\":\"1000 V\", \"col_2\":\"\", \"col_3\":\"70\", \"col_4\":\"70\", \"col_5\":\"70\", \"col_6\":\"80\", \"col_7\":\"120\", \"col_8\":\"160\", \"col_9\":\"-\", \"col_10\":\"-\", \"col_11\":\"-\", \"col_12\":\"-\", \"col_13\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": "",
+      "comments": "",
+      "groupIdentifier": "",
+      "publicationDate": "2023-02-21",
+      "approvalDate": "2008-12-15",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Multifunction calibrator",
+      "instrumentMethod": "AC/DC transfer standard",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    },
+    {
+      "id": 43473,
+      "status": "Published",
+      "statusDate": "2025-01-17",
+      "kcdbCode": "SIM-EM-UY-000005FQ-2",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "Uruguay",
+      "nmiCode": "UTE",
+      "nmiName": "Administraci&oacute;n Nacional de Usinas y Transmisiones El&eacute;ctricas",
+      "nmiServiceCode": "UTE/2024 update ",
+      "nmiServiceLink": "",
+      "quantityValue": "AC voltage",
+      "cmc": {
+        "lowerLimit": 500.0,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 120.0,
+        "upperLimit": 120.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "",
+        "tableRows": 0,
+        "tableCols": 0,
+        "tableComment": "",
+        "tableContents": "<masked>"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": "PTB/BIPM",
+      "comments": "",
+      "groupIdentifier": "",
+      "publicationDate": "2025-01-17",
+      "approvalDate": "2008-09-03",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Calibrators",
+      "instrumentMethod": "Calibrated reference Multimeter",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "50 Hz to 50 kHz"
+        }
+      ]
+    },
+    {
+      "id": 43480,
+      "status": "Published",
+      "statusDate": "2025-01-17",
+      "kcdbCode": "SIM-EM-UY-000005I4-2",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "Uruguay",
+      "nmiCode": "UTE",
+      "nmiName": "Administraci&oacute;n Nacional de Usinas y Transmisiones El&eacute;ctricas",
+      "nmiServiceCode": "UTE/2024 update ",
+      "nmiServiceLink": "",
+      "quantityValue": "AC voltage",
+      "cmc": {
+        "lowerLimit": 1.5,
+        "upperLimit": 30.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 18.0,
+        "upperLimit": 18.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "",
+        "tableRows": 0,
+        "tableCols": 0,
+        "tableComment": "",
+        "tableContents": "<masked>"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": "PTB/BIPM",
+      "comments": "",
+      "groupIdentifier": "",
+      "publicationDate": "2025-01-17",
+      "approvalDate": "2008-09-03",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "Calibrators",
+      "instrumentMethod": "Calibrated reference Multimeter",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "50 Hz to 10 kHz"
+        }
+      ]
+    }
+  ]
+}

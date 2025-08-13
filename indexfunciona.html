@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CMCs - KCDB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Main Container */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            margin: 20px 0;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .breadcrumbs a {
+            color: #6b7280;
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            color: #374151;
+        }
+
+        /* Advanced Search Section */
+        .advanced-search {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Category Selectors */
+        .category-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .category-box {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .category-box:hover {
+            border-color: #1e3a8a;
+            box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1);
+        }
+
+        .category-title {
+            color: #1e3a8a;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .category-subtitle {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .category-arrow {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+        }
+
+        /* Keywords Section */
+        .keywords-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: start;
+        }
+
+        .keywords-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        .help-icon {
+            width: 20px;
+            height: 20px;
+            background-color: #9ca3af;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            cursor: help;
+        }
+
+        .search-input {
+            position: relative;
+        }
+
+        .search-input input {
+            width: 100%;
+            padding: 12px 45px 12px 15px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .search-input input::placeholder {
+            color: #9ca3af;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #1e3a8a;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Dropdown Filters */
+        .dropdown-filters {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .dropdown-field {
+            position: relative;
+        }
+
+        .dropdown-field select {
+            width: 100%;
+            padding: 12px 35px 12px 15px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            background: white;
+            color: #374151;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .dropdown-field select:focus {
+            outline: none;
+            border-color: #1e3a8a;
+        }
+
+        .dropdown-arrow {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+            pointer-events: none;
+        }
+
+        /* Other Filters Section */
+        .other-filters {
+            background-color: #dbeafe;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .other-filters-label {
+            color: #1e3a8a;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .expand-btn {
+            background: none;
+            border: none;
+            color: #1e3a8a;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+
+        .btn-reset {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .btn-reset:hover {
+            background-color: #1e40af;
+        }
+
+        .btn-apply {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .btn-apply:hover {
+            background-color: #1e40af;
+        }
+
+        .btn-advanced {
+            background-color: #059669;
+            color: white;
+        }
+
+        .btn-advanced:hover {
+            background-color: #047857;
+        }
+
+        /* Hidden sections for functionality */
+        .hidden {
+            display: none;
+        }
+
+        /* Status messages */
+        .status {
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        .status.success {
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        .status.error {
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .status.process {
+            background-color: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #93c5fd;
+        }
+
+        /* Results section */
+        .results-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+        }
+
+        .results-section h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #1e3a8a;
+        }
+
+        .submit-btn {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .submit-btn:hover {
+            background-color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="#">Home</a> > CMC search
+        </div>
+
+        <!-- Advanced Search Section -->
+        <div class="advanced-search">
+            <!-- Category Selectors -->
+            <div class="category-row">
+                <div class="category-box">
+                    <div class="category-title">GENERAL PHYSICS</div>
+                    <div class="category-subtitle">Electricity and Magnetism</div>
+                    <div class="category-arrow">▼</div>
+                </div>
+                <div class="category-box">
+                    <div class="category-title">CHEMISTRY AND BIOLOGY</div>
+                    <div class="category-subtitle">Analytical Chemistry</div>
+                    <div class="category-arrow">▼</div>
+                </div>
+                <div class="category-box">
+                    <div class="category-title">IONIZING RADIATION</div>
+                    <div class="category-subtitle">Dosimetry</div>
+                    <div class="category-arrow">▼</div>
+                </div>
+            </div>
+
+            <!-- Keywords and Dropdown Filters -->
+            <div class="keywords-section">
+                <div class="keywords-label">
+                    Keywords
+                    <div class="help-icon">?</div>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Search" id="keywords">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+
+            <div class="dropdown-filters">
+                <div class="dropdown-field">
+                    <select id="branches">
+                        <option value="">All branches</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="biology">Biology</option>
+                    </select>
+                    <div class="dropdown-arrow">▼</div>
+                </div>
+                <div class="dropdown-field">
+                    <select id="services">
+                        <option value="">All services</option>
+                        <option value="calibration">Calibration</option>
+                        <option value="measurement">Measurement</option>
+                        <option value="testing">Testing</option>
+                    </select>
+                    <div class="dropdown-arrow">▼</div>
+                </div>
+                <div class="dropdown-field">
+                    <select id="sub-services">
+                        <option value="">All sub services</option>
+                        <option value="electrical">Electrical</option>
+                        <option value="mechanical">Mechanical</option>
+                        <option value="optical">Optical</option>
+                    </select>
+                    <div class="dropdown-arrow">▼</div>
+                </div>
+                <div class="dropdown-field">
+                    <select id="individual-service">
+                        <option value="">Individual service</option>
+                        <option value="voltage">Voltage</option>
+                        <option value="frequency">Frequency</option>
+                        <option value="resistance">Resistance</option>
+                    </select>
+                    <div class="dropdown-arrow">▼</div>
+                </div>
+            </div>
+
+            <!-- Other Filters -->
+            <div class="other-filters">
+                <div class="other-filters-label">OTHER FILTERS</div>
+                <button class="expand-btn">+</button>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn btn-reset" onclick="resetForm()">RESET</button>
+                <button class="btn btn-apply" onclick="applyCriteria()">APPLY CRITERIA</button>
+                <button class="btn btn-advanced" onclick="window.location.href='/advanced_search'">BÚSQUEDA AVANZADA</button>
+            </div>
+        </div>
+
+        <!-- API Query Section -->
+        <div id="api-section" class="results-section">
+            <h3>Consulta a la API del BIPM</h3>
+            <form id="query-form">
+                <div class="form-group">
+                    <label for="metrologyArea">Área Metrología:</label>
+                    <input type="text" id="metrologyArea" value="EM">
+                </div>
+                
+                <div class="form-group">
+                    <label for="physicsCode">Código Física:</label>
+                    <input type="text" id="physicsCode" value="5.2.1">
+                </div>
+
+                <div class="form-group">
+                    <label for="countries">Países (ISO):</label>
+                    <input type="text" id="countries" value="AR">
+                </div>
+                
+                <button type="submit" class="submit-btn">Consultar API y Buscar Tablas</button>
+            </form>
+            <div id="api-status" class="status hidden"></div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-section" class="results-section">
+            <h3>Resultados de la Búsqueda</h3>
+            
+            <div id="lookup-section" class="hidden">
+                <h4>Búsqueda de Incertidumbre</h4>
+                <p>Tablas encontradas en el archivo: <b id="filename-display"></b></p>
+                
+                <form id="lookup-form">
+                    <div class="form-group">
+                        <label for="table-selector">Seleccionar Tabla:</label>
+                        <select id="table-selector" required></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="voltage">Voltaje (e.g. "0.5 V"):</label>
+                        <input type="text" id="voltage" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="frequency">Frecuencia (e.g. "10 kHz"):</label>
+                        <input type="text" id="frequency" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Buscar Incertidumbre</button>
+                </form>
+                <div id="lookup-result" class="status hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Category box click functionality
+        document.querySelectorAll('.category-box').forEach(box => {
+            box.addEventListener('click', function() {
+                // Add your category selection logic here
+                console.log('Category selected:', this.querySelector('.category-title').textContent);
+            });
+        });
+
+        // Reset form functionality
+        function resetForm() {
+            document.getElementById('keywords').value = '';
+            document.getElementById('branches').selectedIndex = 0;
+            document.getElementById('services').selectedIndex = 0;
+            document.getElementById('sub-services').selectedIndex = 0;
+            document.getElementById('individual-service').selectedIndex = 0;
+            
+            // Reset API form
+            document.getElementById('metrologyArea').value = 'EM';
+            document.getElementById('physicsCode').value = '5.2.1';
+            document.getElementById('countries').value = 'AR';
+            
+            // Hide lookup section
+            document.getElementById('lookup-section').classList.add('hidden');
+            
+            // Clear status messages
+            document.getElementById('api-status').classList.add('hidden');
+            document.getElementById('lookup-result').classList.add('hidden');
+        }
+
+        // Apply criteria functionality
+        function applyCriteria() {
+            const keywords = document.getElementById('keywords').value;
+            const branches = document.getElementById('branches').value;
+            const services = document.getElementById('services').value;
+            const subServices = document.getElementById('sub-services').value;
+            const individualService = document.getElementById('individual-service').value;
+
+            // Show status
+            showStatus(document.getElementById('api-status'), 'Criterios aplicados. Ahora puedes consultar la API del BIPM.', 'success');
+        }
+
+        // Original API query form functionality
+        document.getElementById('query-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            showStatus(document.getElementById('api-status'), 'Consultando API...', 'process');
+
+            const payload = {
+                page: 0,
+                pageSize: 20,
+                showTable: true,
+                metrologyAreaLabel: document.getElementById('metrologyArea').value,
+                physicsCode: document.getElementById('physicsCode').value,
+                countries: document.getElementById('countries').value.split(',').map(c => c.trim()),
+            };
+
+            try {
+                const response = await fetch('/api/query_bipm', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (!response.ok || !result.success) {
+                    throw new Error(result.message || 'Error en la respuesta del servidor.');
+                }
+
+                showStatus(document.getElementById('api-status'), result.message, 'success');
+                
+                // Store filename for lookup
+                window.savedFilename = result.filename;
+                document.getElementById('filename-display').textContent = result.filename;
+
+                // Fill table selector
+                const tableSelector = document.getElementById('table-selector');
+                tableSelector.innerHTML = '<option value="" disabled selected>-- Seleccione una tabla --</option>';
+                
+                if (result.tables.length > 0) {
+                    result.tables.forEach(table => {
+                        const option = document.createElement('option');
+                        option.value = table.id;
+                        option.textContent = `${table.kcdbCode} - ${table.quantityValue}`;
+                        tableSelector.appendChild(option);
+                    });
+                    document.getElementById('lookup-section').classList.remove('hidden');
+                } else {
+                    showStatus(document.getElementById('api-status'), `${result.message}. No se encontraron tablas de incertidumbre válidas.`, 'error');
+                    document.getElementById('lookup-section').classList.add('hidden');
+                }
+
+            } catch (error) {
+                showStatus(document.getElementById('api-status'), `Error: ${error.message}`, 'error');
+            }
+        });
+
+        // Lookup form functionality
+        document.getElementById('lookup-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            showStatus(document.getElementById('lookup-result'), 'Buscando...', 'process');
+
+            const payload = {
+                filename: window.savedFilename,
+                table_id: document.getElementById('table-selector').value,
+                voltage: document.getElementById('voltage').value,
+                frequency: document.getElementById('frequency').value,
+            };
+
+            try {
+                const response = await fetch('/api/lookup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (!response.ok || !result.success) {
+                    throw new Error(result.message || 'Error en la búsqueda.');
+                }
+                
+                const uncertainty = result.result;
+                if (uncertainty !== null) {
+                    showStatus(document.getElementById('lookup-result'), `Resultado encontrado: ${uncertainty}`, 'success');
+                } else {
+                    showStatus(document.getElementById('lookup-result'), 'No se encontró un valor para los parámetros dados.', 'error');
+                }
+
+            } catch (error) {
+                showStatus(document.getElementById('lookup-result'), `Error: ${error.message}`, 'error');
+            }
+        });
+
+        // Utility function for showing status messages
+        function showStatus(element, message, type) {
+            element.textContent = message;
+            element.className = 'status';
+            if (type === 'success') {
+                element.classList.add('success');
+            } else if (type === 'error') {
+                element.classList.add('error');
+            } else if (type === 'process') {
+                element.classList.add('process');
+            }
+            element.classList.remove('hidden');
+        }
+
+        // Expand other filters functionality
+        document.querySelector('.expand-btn').addEventListener('click', function() {
+            // Add your expand logic here
+            console.log('Expanding other filters...');
+        });
+    </script>
+</body>
+</html>

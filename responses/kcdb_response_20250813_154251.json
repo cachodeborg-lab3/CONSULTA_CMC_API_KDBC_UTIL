@@ -1,0 +1,70 @@
+{
+  "versionApiKcdb": "1.0.9",
+  "pageNumber": 0,
+  "pageSize": 20,
+  "numberOfElements": 1,
+  "totalElements": 1,
+  "totalPages": 1,
+  "data": [
+    {
+      "id": 8435,
+      "status": "Published",
+      "statusDate": "2014-07-07",
+      "kcdbCode": "SIM-EM-AR-000006IB-1",
+      "domainCode": "PHYSICS",
+      "metrologyAreaLabel": "EM",
+      "rmo": "SIM",
+      "countryValue": "Argentina",
+      "nmiCode": "INTI",
+      "nmiName": "Instituto Nacional de Tecnologia Industrial",
+      "nmiServiceCode": "INTI/102.02.03.05.10.003",
+      "nmiServiceLink": null,
+      "quantityValue": "AC voltage up to 1100 V: sources",
+      "cmc": {
+        "lowerLimit": 0.1,
+        "upperLimit": 1000.0,
+        "unit": "V"
+      },
+      "cmcUncertainty": {
+        "lowerLimit": 7.0,
+        "upperLimit": 220.0,
+        "unit": "µV/V"
+      },
+      "confidenceLevel": 95.0,
+      "coverageFactor": 2.0,
+      "uncertaintyEquation": {
+        "equation": "",
+        "equationComment": ""
+      },
+      "uncertaintyTable": {
+        "tableName": "MX-38",
+        "tableRows": 6,
+        "tableCols": 16,
+        "tableComment": "The expanded uncertainties given in this table are expressed in µV/V",
+        "tableContents": "{\"row_1\":{\"col_1\":\"\",\"col_2\":\"0.01 kHz\",\"col_3\":\"0.02 kHz\",\"col_4\":\"0.03 kHz\",\"col_5\":\"0.04 kHz\",\"col_6\":\"0.5 kHz\",\"col_7\":\"1 kHz\",\"col_8\":\"10 kHz\",\"col_9\":\"20 kHz\",\"col_10\":\"50 kHz\",\"col_11\":\"70 kHz\",\"col_12\":\"100 kHz\",\"col_13\":\"200 kHz\",\"col_14\":\"500 kHz\",\"col_15\":\"700 kHz\",\"col_16\":\"1000 kHz\"},\"row_2\":{\"col_1\":\"0.1 V to 1 V\",\"col_2\":\"30\",\"col_3\":\"30\",\"col_4\":\"30\",\"col_5\":\"30\",\"col_6\":\"30\",\"col_7\":\"30\",\"col_8\":\"30\",\"col_9\":\"30\",\"col_10\":\"40\",\"col_11\":\"50\",\"col_12\":\"65\",\"col_13\":\"80\",\"col_14\":\"100\",\"col_15\":\"150\",\"col_16\":\"220\"},\"row_3\":{\"col_1\":\"1 V\",\"col_2\":\"7\",\"col_3\":\"7\",\"col_4\":\"7\",\"col_5\":\"7\",\"col_6\":\"7\",\"col_7\":\"7\",\"col_8\":\"7\",\"col_9\":\"7\",\"col_10\":\"8\",\"col_11\":\"10\",\"col_12\":\"15\",\"col_13\":\"20\",\"col_14\":\"30\",\"col_15\":\"35\",\"col_16\":\"50\"},\"row_4\":{\"col_1\":\"1 V to 10 V\",\"col_2\":\"10\",\"col_3\":\"7\",\"col_4\":\"7\",\"col_5\":\"7\",\"col_6\":\"7\",\"col_7\":\"7\",\"col_8\":\"7\",\"col_9\":\"7\",\"col_10\":\"10\",\"col_11\":\"15\",\"col_12\":\"20\",\"col_13\":\"25\",\"col_14\":\"35\",\"col_15\":\"45\",\"col_16\":\"60\"},\"row_5\":{\"col_1\":\"10 V to 100 V\",\"col_2\":\"15\",\"col_3\":\"15\",\"col_4\":\"15\",\"col_5\":\"15\",\"col_6\":\"15\",\"col_7\":\"15\",\"col_8\":\"15\",\"col_9\":\"15\",\"col_10\":\"20\",\"col_11\":\"30\",\"col_12\":\"40\",\"col_13\":\"-\",\"col_14\":\"-\",\"col_15\":\"-\",\"col_16\":\"-\"},\"row_6\":{\"col_1\":\"100 V to 1000 V\",\"col_2\":\"25\",\"col_3\":\"25\",\"col_4\":\"25\",\"col_5\":\"25\",\"col_6\":\"25\",\"col_7\":\"25\",\"col_8\":\"25\",\"col_9\":\"30\",\"col_10\":\"50\",\"col_11\":\"80\",\"col_12\":\"200\",\"col_13\":\"-\",\"col_14\":\"-\",\"col_15\":\"-\",\"col_16\":\"-\"}}"
+      },
+      "uncertaintyMode": "Relative",
+      "traceabilitySource": null,
+      "comments": "",
+      "groupIdentifier": null,
+      "publicationDate": "2014-07-07",
+      "approvalDate": "2014-07-07",
+      "internationalStandard": null,
+      "branchValue": "AC voltage, current, and power",
+      "branchLabel": "EM/AC",
+      "serviceValue": "AC voltage (up to the MHz range)",
+      "subServiceValue": "AC voltage up to 1100 V",
+      "individualServiceValue": "Sources",
+      "physicsCode": "5.2.1",
+      "kcdbServiceCategory": "EM/AC/5.2.1",
+      "instrument": "AC voltage source, multifunction calibrator",
+      "instrumentMethod": "AC/DC transfer",
+      "parameters": [
+        {
+          "parameterName": "Frequency",
+          "parameterValue": "10 Hz to 1 MHz"
+        }
+      ]
+    }
+  ]
+}
