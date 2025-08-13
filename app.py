@@ -1,18 +1,18 @@
 import os
 import json
 import requests
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory
 from datetime import datetime
 
 # Importa la función de búsqueda de tu script original
 from todojunto import lookup_tableContents_raw
+from config import Config
 
 # Inicializa la aplicación Flask
 app = Flask(__name__)
 
 # Asegúrate de que la carpeta 'responses' exista
-if not os.path.exists('responses'):
-    os.makedirs('responses')
+Config.ensure_responses_folder()
 
 @app.route('/')
 def index():
@@ -23,6 +23,18 @@ def index():
 def advanced_search():
     """Sirve la página de búsqueda avanzada."""
     return render_template('advanced_search.html')
+
+@app.route('/test')
+def test_files():
+    """Sirve la página de prueba de archivos."""
+    return render_template('test_auto_load.html')
+
+@app.route('/<filename>')
+def serve_json_file(filename):
+    """Sirve archivos JSON estáticos"""
+    if filename in [Config.DEFAULT_TREE_FILE, Config.DEFAULT_LOCAL_JSON]:
+        return send_from_directory('.', filename)
+    return "Archivo no encontrado", 404
 
 @app.route('/api/query_bipm', methods=['POST'])
 def query_bipm_api():
@@ -165,8 +177,8 @@ def advanced_search_api():
 
 if __name__ == '__main__':
     # Configuración para desarrollo local
-    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+    app.run(debug=Config.DEBUG, host=Config.HOST, port=Config.PORT)
 else:
     # Configuración para producción (Render)
     # El puerto se obtiene de la variable de entorno PORT
-    port = int(os.environ.get('PORT', 5000))
+    port = Config.PORT

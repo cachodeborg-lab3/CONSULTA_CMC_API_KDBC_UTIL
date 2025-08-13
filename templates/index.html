@@ -29,15 +29,26 @@
             margin: 20px 0;
             color: #6b7280;
             font-size: 14px;
+            padding: 10px 0;
         }
 
         .breadcrumbs a {
             color: #6b7280;
             text-decoration: none;
+            transition: color 0.2s;
         }
 
         .breadcrumbs a:hover {
-            color: #374151;
+            color: #1e3a8a;
+        }
+
+        .page-title {
+            color: #1e3a8a;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         }
 
         /* Page Title */
@@ -59,6 +70,15 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
 
+        .main-search-card h3 {
+            color: #1e3a8a;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
+        }
+
         .card-header {
             margin-bottom: 30px;
             text-align: center;
@@ -77,11 +97,12 @@
 
         /* Tree Loading Section */
         .tree-loading-section {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            padding: 20px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 1px solid #7dd3fc;
+            border-radius: 8px;
+            padding: 25px;
             margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(14, 165, 233, 0.1);
         }
 
         .tree-loading-section h3 {
@@ -97,12 +118,30 @@
             align-items: end;
         }
 
+
+
         /* Cascading Selects */
         .cascading-selects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             margin-bottom: 30px;
+            background-color: #f8fafc;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .cascading-selects::before {
+            content: "Selección de Criterios";
+            grid-column: 1 / -1;
+            color: #1e3a8a;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
         }
 
         .select-group {
@@ -152,11 +191,12 @@
 
         /* Data Source Section */
         .data-source-section {
-            background-color: #dbeafe;
-            border: 1px solid #e5e7eb;
-            border-radius: 6px;
-            padding: 20px;
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border: 1px solid #93c5fd;
+            border-radius: 8px;
+            padding: 25px;
             margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
         }
 
         .data-source-section h3 {
@@ -204,6 +244,10 @@
             gap: 20px;
             align-items: center;
             margin-bottom: 30px;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
         }
 
         .status-badge {
@@ -246,6 +290,11 @@
             gap: 20px;
             justify-content: center;
             margin-bottom: 30px;
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #86efac;
+            box-shadow: 0 2px 4px rgba(34, 197, 94, 0.1);
         }
 
         .btn {
@@ -275,6 +324,15 @@
 
         .btn-secondary:hover {
             background-color: #4b5563;
+        }
+
+        .btn-success {
+            background-color: #059669;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #047857;
         }
 
         .btn-success {
@@ -548,6 +606,7 @@
                     </div>
                     <button id="loadBtn" class="btn btn-primary">Cargar Estructura</button>
                 </div>
+
             </div>
 
             <!-- Cascading Selects -->
@@ -1216,6 +1275,7 @@
         document.getElementById('clearBtn').addEventListener('click', clearAll);
         document.getElementById('queryBtn').addEventListener('click', runQuery);
 
+
         // Control de fuente de datos
         const sourceRadios = document.getElementsByName('source');
         Array.from(sourceRadios).forEach(r => r.addEventListener('change', () => {
@@ -1235,29 +1295,42 @@
             }
         });
 
+
+
+
+
         // Carga inicial
         (async () => {
+            console.log('🚀 Iniciando carga automática...');
+            
             // Selección por defecto: JSON local
             const localRadio = document.querySelector('input[name="source"][value="local"]');
             if (localRadio) localRadio.checked = true;
 
-            // Intentar cargar árbol por defecto
+            // Cargar árbol por defecto silenciosamente
             try {
                 const turl = (document.getElementById('treeUrl').value || DEFAULT_TREE_URL).trim();
+                console.log('📁 Cargando árbol automáticamente desde:', turl);
                 const autoTree = await fetchJSON(turl);
                 state.tree = autoTree;
-                setStatus('Estructura: OK', 'success');
+                setStatus('Estructura: OK (cargada automáticamente)', 'success');
                 buildUI();
+                console.log('✅ Árbol cargado exitosamente');
             } catch (err) {
-                setStatus('Estructura: — (no se pudo cargar por defecto)', 'default');
+                console.error('❌ Error al cargar árbol automáticamente:', err);
+                setStatus('Estructura: — (cargar manualmente)', 'default');
             }
 
-            // Intentar cargar JSON local por defecto
+            // Cargar JSON local por defecto silenciosamente
             try {
                 const rurl = (respUrlInput?.value || DEFAULT_LOCAL_URL).trim();
+                console.log('📄 Cargando JSON local automáticamente desde:', rurl);
                 const autoResp = await fetchJSON(rurl);
                 state.localData = autoResp;
-            } catch {}
+                console.log('✅ JSON local cargado exitosamente');
+            } catch (err) {
+                console.error('❌ Error al cargar JSON local automáticamente:', err);
+            }
         })();
     </script>
 </body>

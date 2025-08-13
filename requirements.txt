@@ -3,6 +3,9 @@ Flask==3.0.0
 requests==2.31.0
 gunicorn==21.2.0
 
+# Configuración
+# config.py - Archivo de configuración local (no requiere instalación)
+
 # Dependencias de desarrollo (opcionales)
 # python-dotenv==1.0.0  # Para variables de entorno
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Carga Automática</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .loading { background-color: #d1ecf1; color: #0c5460; }
+    </style>
+</head>
+<body>
+    <h1>Prueba de Carga Automática de JSONs</h1>
+    
+    <div id="status">Estado: Iniciando...</div>
+    
+    <h2>Archivos a verificar:</h2>
+    <ul>
+        <li id="tree-status">🌳 cmc_category_tree.json: Verificando...</li>
+        <li id="json-status">📄 CMC_EM_MUNDIAL.json: Verificando...</li>
+    </ul>
+    
+    <button onclick="testFiles()">🔄 Probar Archivos</button>
+    
+    <script>
+        async function checkFileExists(url) {
+            try {
+                const response = await fetch(url, { method: 'HEAD' });
+                return response.ok;
+            } catch {
+                return false;
+            }
+        }
+        
+        async function testFiles() {
+            const treeStatus = document.getElementById('tree-status');
+            const jsonStatus = document.getElementById('json-status');
+            const mainStatus = document.getElementById('status');
+            
+            mainStatus.textContent = 'Estado: Probando archivos...';
+            mainStatus.className = 'status loading';
+            
+            // Verificar árbol
+            try {
+                treeStatus.textContent = '🌳 cmc_category_tree.json: Verificando...';
+                const treeExists = await checkFileExists('cmc_category_tree.json');
+                if (treeExists) {
+                    treeStatus.textContent = '🌳 cmc_category_tree.json: ✅ Encontrado';
+                    treeStatus.className = 'status success';
+                } else {
+                    treeStatus.textContent = '🌳 cmc_category_tree.json: ❌ No encontrado';
+                    treeStatus.className = 'status error';
+                }
+            } catch (err) {
+                treeStatus.textContent = '🌳 cmc_category_tree.json: ❌ Error';
+                treeStatus.className = 'status error';
+            }
+            
+            // Verificar JSON local
+            try {
+                jsonStatus.textContent = '📄 CMC_EM_MUNDIAL.json: Verificando...';
+                const jsonExists = await checkFileExists('CMC_EM_MUNDIAL.json');
+                if (jsonExists) {
+                    jsonStatus.textContent = '📄 CMC_EM_MUNDIAL.json: ✅ Encontrado';
+                    jsonStatus.className = 'status success';
+                } else {
+                    jsonStatus.textContent = '📄 CMC_EM_MUNDIAL.json: ❌ No encontrado';
+                    jsonStatus.className = 'status error';
+                }
+            } catch (err) {
+                jsonStatus.textContent = '📄 CMC_EM_MUNDIAL.json: ❌ Error';
+                jsonStatus.className = 'status error';
+            }
+            
+            mainStatus.textContent = 'Estado: Prueba completada';
+            mainStatus.className = 'status success';
+        }
+        
+        // Ejecutar prueba automáticamente al cargar
+        window.addEventListener('load', testFiles);
+    </script>
+</body>
+</html>
