@@ -164,5 +164,9 @@ def advanced_search_api():
         return jsonify({"success": False, "message": f"Error inesperado: {e}"}), 500
 
 if __name__ == '__main__':
-    # Inicia el servidor en modo de depuración para facilitar el desarrollo
-    app.run(debug=True)
+    # Configuración para desarrollo local
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+else:
+    # Configuración para producción (Render)
+    # El puerto se obtiene de la variable de entorno PORT
+    port = int(os.environ.get('PORT', 5000))
