@@ -1,0 +1,19 @@
+# Dependencias principales
+Flask==3.0.0
+requests==2.31.0
+
+# Dependencias de desarrollo (opcionales)
+# python-dotenv==1.0.0  # Para variables de entorno
+# gunicorn==21.2.0      # Para producción
+
+# Dependencias del sistema (incluidas en Python estándar)
+# json, os, datetime, typing - No requieren instalación
+
+# Notas de instalación:
+# 1. Instalar con: pip install -r requirements.txt
+# 2. Para desarrollo: pip install -r requirements.txt
+# 3. Para producción: pip install -r requirements.txt --no-dev
+# 4. Versiones mínimas recomendadas:
+#    - Python: 3.8+
+#    - Flask: 2.3+
+#    - requests: 2.28+
